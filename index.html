@@ -139,7 +139,7 @@ div.csl-indent {
   <div class="abstract">
     <div class="abstract-title">Abstract</div>
     <blockquote class="blockquote">
-    <p>The notebook should include an abstract cell at the beginning. If you inspect the metadata for this cell, you will find <code>"part": "abstract"</code>. This metadata is required for recognizing the content of this cell as the abstract.</p>
+    <p>The notebok should begin with a single markdown cell which contains document front matter (such as the title, author data, license, abstract, and more).</p>
     <p>The abstract should begin with a short description of the problem addressed, briefly describe the new data or analyses, then briefly state the main conclusion(s) and how they are supported, and address any uncertainty.</p>
     </blockquote>
     <p>In September 2021, a significant jump in seismic activity on the island of La Palma (Canary Islands, Spain) signaled the start of a volcanic crisis that still continues at the time of writing. Earthquake data is continually collected and published by the Instituto Geográphico Nacional (IGN). We have created an accessible dataset from this and completed preliminary data analysis which shows seismicity originating at two distinct depths, consistent with the model of a two reservoir system feeding the currently very active volcano.</p>
@@ -148,14 +148,14 @@ div.csl-indent {
 
 </header>
 
-<section id="introduction" class="level1">
-<h1>Introduction</h1>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <blockquote class="blockquote">
-<p>The content of your notebook may be broken into any number of markdown or code cells. Markdown cells use MyST markdown and support <a href="https://myst-tools.org/docs/mystjs/typography">standard markdown typography</a> and many <a href="https://myst-tools.org/docs/mystjs/syntax-overview">directives and roles</a> for figures, tables, equations, etc.</p>
+<p>The content of your notebook may be broken into any number of markdown or code cells. Markdown cells use Quarto markdown. Quarto markdown supports an extended version of the basic Markdown syntax originally created by John Gruber, which adds support for many common document elements including citations, figures, tables, admonitions, and more. Quarto markdown also supports the use of LaTeX for mathematical equations, advanced layout control, as well as other advanced formatting.</p>
 </blockquote>
 <p>La Palma is one of the west most islands in the Volcanic Archipelago of the Canary Islands, a Spanish territory situated is the Atlantic Ocean where at their closest point are 100km from the African coast <a href="#fig-map" class="quarto-xref">Figure&nbsp;1</a>. The island is one of the youngest, remains active and is still in the island forming stage.</p>
 <blockquote class="blockquote">
-<p>Figures may be added to your notebook using the <a href="https://myst-tools.org/docs/mystjs/figures">figure directive</a>. They may refer to images saved in your <code>images/</code> folder, images from the web, or notebook cell outputs <a href="https://myst-tools.org/docs/mystjs/cross-references#targeting-cells">referenced by label</a>. The <code>:name:</code> is used to reference the figure in your text; a reference to the following figure is found in the paragraph above. The figure caption is given as the body of this directive.</p>
+<p>Figures may be added to your notebook using <a href="https://quarto.org/docs/authoring/figures.html">markdown images or specifial markdown elements</a> (‘fenced divs’). They may refer to images saved in your <code>images/</code> folder (or other folders), images from the web, or generated directly using code cells. You may embed figures produced in other notebooks using the <a href="https://quarto.org/docs/authoring/notebook-embed.html">embed shortcode</a> (this embed figures, tables, or any other content from Jupyter Notebooks). Refer to figures by their label (e.g.&nbsp;<code>@fig-map</code>).</p>
 </blockquote>
 <div id="fig-map" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -164,11 +164,11 @@ div.csl-indent {
 </figure>
 </div>
 <p>La Palma has been constructed by various phases of volcanism, the most recent and currently active being the <em>Cumbre Vieja</em> volcano, a north-south volcanic ridge that constitutes the southern half of the island.</p>
-<section id="eruption-history" class="level2">
-<h2 class="anchored" data-anchor-id="eruption-history">Eruption History</h2>
+<section id="eruption-history" class="level3">
+<h3 class="anchored" data-anchor-id="eruption-history">Eruption History</h3>
 <p>A number of eruptions were recorded since the colonization of the islands by Europeans in the late 1400s, these are summarised in <a href="#tbl-history" class="quarto-xref">Table&nbsp;1</a>.</p>
 <blockquote class="blockquote">
-<p>Simple tables may be created using the <a href="https://myst-tools.org/docs/mystjs/tables">list-table directive</a>. Similar to figures, tables may be referenced in the text by their <code>name</code>. The caption for this table is the first line of the directive.</p>
+<p>Quarto supports a number of ways to create tables using both standard markdown tables (pipe tables) and more complex markdown tables using a grid style syntax (grid tables). In addition, Quarto provides the ability to control column width, caption position, create subtables, and more. See <a href="https://quarto.org/docs/authoring/tables.html">Quarto’s table document</a> to learn more. Refer to tables in the text by their label (e.g.&nbsp;<code>@tbl-history</code>).</p>
 </blockquote>
 <div id="tbl-history" class="anchored">
 <table class="table">
@@ -217,7 +217,7 @@ div.csl-indent {
 </div>
 <p>This equates to an eruption on average every 79 years up until the 1971 event. The probability of a future eruption can be modeled by a Poisson distribution <a href="#eq-poisson" class="quarto-xref">Equation&nbsp;1</a>.</p>
 <blockquote class="blockquote">
-<p>Numbered equations may be defined using the <a href="https://myst-tools.org/docs/mystjs/math">math directive or in line</a>. Equations defined with the math directive may be reference in the text by label.</p>
+<p>Numbered equations may be defined using ‘dollar math’ by placing equations between matching pairs of dollar signs. Learn more about Quarto’s equation here: <a href="https://quarto.org/docs/authoring/cross-references.html#equations">https://quarto.org/docs/authoring/cross-references.html#equations</a>. Refer to equations in the text by their label (e.g.&nbsp;<code>@eq-poisson</code>).</p>
 </blockquote>
 <p><span id="eq-poisson"><span class="math display">\[
 p(x)=\frac{e^{-\lambda} \lambda^{x}}{x !}
@@ -228,12 +228,12 @@ p_e = 1-\mathrm{e}^{-t \lambda}
 \tag{2}\]</span></span></p>
 <p>So following the 1971 eruption the probability of an eruption in the following 50 years — the period ending this year — was 0.469. After the event, the number of eruptions per year moves to <span class="math inline">\(\lambda=\frac{1}{75}\)</span> and the probability of a further eruption within the next 50 years (2022-2071) rises to 0.487 and in the next 100 years, this rises again to 0.736.</p>
 </section>
-<section id="magma-reservoirs" class="level2">
-<h2 class="anchored" data-anchor-id="magma-reservoirs">Magma Reservoirs</h2>
+<section id="magma-reservoirs" class="level3">
+<h3 class="anchored" data-anchor-id="magma-reservoirs">Magma Reservoirs</h3>
 <blockquote class="blockquote">
-<p>You may <a href="https://myst-tools.org/docs/mystjs/citations">add citations two ways</a>. First, you may simply insert a markdown link link to a DOI like so: <a href="10.1093/nar/22.22.4673"></a>. No additional bibliographic information is required for this approach; the reference will be looked up by DOI and added implicitly to the references. Alternatively, you may provide the bibliography directly as <code>references.bib</code> bibtex file, then embed the citation by bibtex key in your text using the <code>cite:p</code> or <code>cite:t</code> for parenthetical or textual citations, respectively. The following paragraph provides an example of this. A single paper may combine both DOI and bibtex citations.</p>
+<p>You may provide the bibliography directly as a bibtex, biblatex, CSL JSON, or CSL YAML file (defined in the document front matter or <code>_quarto.yml</code> project file) then embed the citation by citation key in your text using the <code>[@cite]</code> or <code>@cite</code> for parenthetical or textual citations, respectively. The following paragraph provides an example of this. Quarto’s <a href="https://quarto.org/docs/authoring/footnotes-and-citations.html">documentation on citations</a> provides more details on working with bibliographies and citations.</p>
 </blockquote>
-<p>Studies of the magma systems feeding the volcano, such as <span class="citation" data-cites="article">Marrero et al. (<a href="#ref-article" role="doc-biblioref">2019</a>)</span> has proposed that there are two main magma reservoirs feeding the Cumbre Vieja volcano; one in the mantle (30-40km depth) which charges and in turn feeds a shallower crustal reservoir (10-20km depth).</p>
+<p>Studies of the magma systems feeding the volcano, such as <span class="citation" data-cites="marrero2019">(<a href="#ref-marrero2019" role="doc-biblioref"><strong>marrero2019?</strong></a>)</span> has proposed that there are two main magma reservoirs feeding the Cumbre Vieja volcano; one in the mantle (30-40km depth) which charges and in turn feeds a shallower crustal reservoir (10-20km depth).</p>
 <div id="fig-reservoirs" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/reservoirs.png" class="img-fluid figure-img" style="width:100.0%" data-align="center"></p>
@@ -252,7 +252,7 @@ p_e = 1-\mathrm{e}^{-t \lambda}
 <section id="main-timeline-figure" class="level2">
 <h2 class="anchored" data-anchor-id="main-timeline-figure">Main Timeline Figure</h2>
 <blockquote class="blockquote">
-<p>Code cells may be seamlessly interleaved with markdown cells. Currently, with a single-article submission, code cannot be hidden in the output document.</p>
+<p>Code cells may be seamlessly interleaved with markdown cells. There are a variety of execution options to control the behavior of code cells - learn more in <a href="https://quarto.org/docs/computations/execution-options.html">Quarto’s documentation on execution options</a>.</p>
 </blockquote>
 </section>
 <section id="visualising-long-term-earthquake-data" class="level2">
@@ -294,10 +294,8 @@ p_e = 1-\mathrm{e}^{-t \lambda}
 <p>A web scraping script was developed to pull data into a machine-readable form for analysis. That code tool <a href="https://github.com/stevejpurves/ign-earthquake-data">is available on GitHub</a> along with a copy of recently updated data.</p>
 <section id="references" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
-<div id="refs" class="references csl-bib-body hanging-indent" role="list">
-<div id="ref-article" class="csl-entry" role="listitem">
-Marrero, José, Alicia García, Manuel Berrocoso, Ángeles Llinares, Antonio Rodríguez-Losada, and R. Ortiz. 2019. <span>“Strategies for the Development of Volcanic Hazard Maps in Monogenetic Volcanic Fields: The Example of <span>La</span> <span>Palma</span> (<span>Canary</span> <span>Islands</span>).”</span> <em>Journal of Applied Volcanology</em> 8 (July). <a href="https://doi.org/10.1186/s13617-019-0085-5">https://doi.org/10.1186/s13617-019-0085-5</a>.
-</div>
+<div id="refs" role="list">
+
 </div>
 </section>
 </section>
@@ -307,10 +305,9 @@ Marrero, José, Alicia García, Manuel Berrocoso, Ángeles Llinares, Antonio Rod
   title = {La {Palma} {Earthquakes}},
   date = {2022-05-11},
   langid = {en},
-  abstract = {\textgreater{} The notebook should include an abstract
-    cell at the beginning. If you inspect the metadata for this cell,
-    you will find `“part”: “abstract”`. This metadata is required for
-    recognizing the content of this cell as the abstract. \textgreater{}
+  abstract = {\textgreater{} The notebok should begin with a single
+    markdown cell which contains document front matter (such as the
+    title, author data, license, abstract, and more). \textgreater{}
     \textgreater The abstract should begin with a short description of
     the problem addressed, briefly describe the new data or analyses,
     then briefly state the main conclusion(s) and how they are

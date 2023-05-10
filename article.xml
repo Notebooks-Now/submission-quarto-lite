@@ -35,6 +35,12 @@ and Interchange DTD v1.2 20190208//EN" "JATS-archivearticle1.dtd">
 </name>
 <string-name>Steve Purves</string-name>
 <email>steve@curvenote.com</email>
+<role vocab="https://credit.niso.org" vocab-term="investigation" vocab-term-identifier="https://credit.niso.org/contributor-roles/investigation/">Investigation</role>
+<role vocab="https://credit.niso.org" vocab-term="project
+administration" vocab-term-identifier="https://credit.niso.org/contributor-roles/project-administration/">Project
+administration</role>
+<role vocab="https://credit.niso.org" vocab-term="software" vocab-term-identifier="https://credit.niso.org/contributor-roles/software/">Software</role>
+<role vocab="https://credit.niso.org" vocab-term="visualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/visualization/">Visualization</role>
 <xref ref-type="aff" rid="aff-1">a</xref>
 <xref ref-type="corresp" rid="cor-1">&#x002A;</xref>
 </contrib>
@@ -124,9 +130,9 @@ system feeding the currently very active volcano.</p>
   <p>La Palma is one of the west most islands in the Volcanic
   Archipelago of the Canary Islands, a Spanish territory situated is the
   Atlantic Ocean where at their closest point are 100km from the African
-  coast <xref alt="Figure 1" rid="fig-map">Figure 1</xref>. The island
-  is one of the youngest, remains active and is still in the island
-  forming stage.</p>
+  coast <xref alt="Figure 1" rid="fig-map-90845ac5">Figure 1</xref>. The
+  island is one of the youngest, remains active and is still in the
+  island forming stage.</p>
   <disp-quote>
     <p>Figures may be added to your notebook using
     <ext-link ext-link-type="uri" xlink:href="https://quarto.org/docs/authoring/figures.html">markdown
@@ -140,7 +146,7 @@ system feeding the currently very active volcano.</p>
     content from Jupyter Notebooks). Refer to figures by their label
     (e.g. <monospace>@fig-map</monospace>).</p>
   </disp-quote>
-  <fig id="fig-map">
+  <fig id="fig-map-90845ac5">
     <caption><p>Figure 1: Map of La Palma in the Canary Islands. Image
     credit
     <ext-link ext-link-type="uri" xlink:href="https://commons.wikimedia.org/w/index.php?curid=76638603">NordNordWest</ext-link></p></caption>
@@ -154,7 +160,7 @@ system feeding the currently very active volcano.</p>
     <title>Eruption History</title>
     <p>A number of eruptions were recorded since the colonization of the
     islands by Europeans in the late 1400s, these are summarised in
-    <xref alt="Table 1" rid="tbl-history">Table 1</xref>.</p>
+    <xref alt="Table 1" rid="tbl-history-90845ac5">Table 1</xref>.</p>
     <disp-quote>
       <p>Quarto supports a number of ways to create tables using both
       standard markdown tables (pipe tables) and more complex markdown
@@ -170,7 +176,7 @@ system feeding the currently very active volcano.</p>
       <caption>
         <p>Table 1: Recent historic eruptions on La Palma</p>
       </caption>
-      <table>
+      <table id="tbl-history-90845ac5">
         <thead>
           <tr>
             <th>Name</th>
@@ -277,14 +283,14 @@ system feeding the currently very active volcano.</p>
     Cumbre Vieja volcano; one in the mantle (30-40km depth) which
     charges and in turn feeds a shallower crustal reservoir (10-20km
     depth).</p>
-    <fig id="fig-reservoirs">
+    <fig id="fig-reservoirs-90845ac5">
       <caption><p>Figure 2: Proposed model from Marrero et
       al</p></caption>
       <graphic mimetype="image" mime-subtype="png" xlink:href="images/reservoirs.png" />
     </fig>
     <p>In this paper, we look at recent seismicity data to see if we can
     see evidence of such a system action, see
-    <xref alt="Figure 2" rid="fig-reservoirs">Figure 2</xref>.</p>
+    <xref alt="Figure 2" rid="fig-reservoirs-90845ac5">Figure 2</xref>.</p>
   </sec>
 </sec>
 <sec id="dataset">
@@ -322,11 +328,19 @@ system feeding the currently very active volcano.</p>
       <monospace>matplotlib</monospace> plot, and
       <monospace>seaborn</monospace> plot.</p>
     </disp-quote>
+    <sec id="d7910f53" sec-type="notebook-code">
+    <sec id="d7910f53-output-0" content-type="notebook-output">
     <graphic mimetype="image" mime-subtype="png" xlink:href="article_files/figure-jats/cell-8-output-1.png" />
+    </sec>
+    </sec>
   </sec>
   <sec id="cumulative-distribution-plots">
     <title>Cumulative Distribution Plots</title>
+    <sec id="cell-7609bbb1" sec-type="notebook-code">
+    <sec id="7609bbb1-output-0" content-type="notebook-output">
     <graphic mimetype="image" mime-subtype="png" xlink:href="article_files/figure-jats/cell-10-output-1.png" />
+    </sec>
+    </sec>
   </sec>
 </sec>
 <sec id="results">
@@ -353,7 +367,8 @@ system feeding the currently very active volcano.</p>
   IGN for the period of 11 September through to 9 November 2021.
   Visualization of the earthquake events at different depths appears to
   confirm the presence of both mantle and crustal reservoirs as proposed
-  by {cite:t}<monospace>article</monospace>.</p>
+  by Marrero et al.
+  (<xref alt="2019" rid="ref-marrero2019" ref-type="bibr">2019</xref>).</p>
   <disp-quote>
     <p>Data availability statement should be specified in a separate
     cell with metadata
@@ -398,29 +413,5 @@ system feeding the currently very active volcano.</p>
 </ref-list>
 </back>
 
-<sub-article article-type="notebook">
-<front-stub>
-</front-stub>
-
-<body>
-<sec id="d7910f53" sec-type="notebook-code">
-<sec id="d7910f53-output-0" content-type="notebook-output">
-<graphic mimetype="image" mime-subtype="png" xlink:href="article_files/figure-jats/cell-8-output-1.png" />
-</sec>
-</sec>
-<sec id="cell-7609bbb1" sec-type="notebook-code">
-<sec id="7609bbb1-output-0" content-type="notebook-output">
-<graphic mimetype="image" mime-subtype="png" xlink:href="article_files/figure-jats/cell-10-output-1.png" />
-</sec>
-</sec>
-</body>
-
-
-
-<back>
-</back>
-
-
-</sub-article>
 
 </article>

@@ -1,14 +1,12 @@
 project:
   type: manuscript
-  render: 
-    - article.ipynb
 
 manuscript:
-  meca: true
+  article: article.ipynb
+  meca-archive: true
 
 format:
   html:
-    toc: true
     format-links: [agu-pdf, docx]
     comments: 
       hypothesis: true
@@ -16,8 +14,7 @@ format:
     repo-actions: [edit, issue]    
   agu-pdf: default
   docx: default
-  jats:
-    notebook-subarticles: true
+  jats: default
 
 
 

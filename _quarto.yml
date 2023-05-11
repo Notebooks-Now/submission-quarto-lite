@@ -1,6 +1,9 @@
 project:
   type: manuscript
 
+manuscript:
+  meca-archive: true
+  
 format:
   html:
     format-links: [agu-pdf, docx]

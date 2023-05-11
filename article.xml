@@ -130,7 +130,7 @@ system feeding the currently very active volcano.</p>
   <p>La Palma is one of the west most islands in the Volcanic
   Archipelago of the Canary Islands, a Spanish territory situated is the
   Atlantic Ocean where at their closest point are 100km from the African
-  coast <xref alt="Figure 1" rid="fig-map-67f93c45">Figure 1</xref>. The
+  coast <xref alt="Figure 1" rid="fig-map-948a88cf">Figure 1</xref>. The
   island is one of the youngest, remains active and is still in the
   island forming stage.</p>
   <disp-quote>
@@ -146,7 +146,7 @@ system feeding the currently very active volcano.</p>
     content from Jupyter Notebooks). Refer to figures by their label
     (e.g. <monospace>@fig-map</monospace>).</p>
   </disp-quote>
-  <fig id="fig-map-67f93c45">
+  <fig id="fig-map-948a88cf">
     <caption><p>Figure 1: Map of La Palma in the Canary Islands. Image
     credit
     <ext-link ext-link-type="uri" xlink:href="https://commons.wikimedia.org/w/index.php?curid=76638603">NordNordWest</ext-link></p></caption>
@@ -160,7 +160,7 @@ system feeding the currently very active volcano.</p>
     <title>Eruption History</title>
     <p>A number of eruptions were recorded since the colonization of the
     islands by Europeans in the late 1400s, these are summarised in
-    <xref alt="Table 1" rid="tbl-history-67f93c45">Table 1</xref>.</p>
+    <xref alt="Table 1" rid="tbl-history-948a88cf">Table 1</xref>.</p>
     <disp-quote>
       <p>Quarto supports a number of ways to create tables using both
       standard markdown tables (pipe tables) and more complex markdown
@@ -176,7 +176,7 @@ system feeding the currently very active volcano.</p>
       <caption>
         <p>Table 1: Recent historic eruptions on La Palma</p>
       </caption>
-      <table id="tbl-history-67f93c45">
+      <table id="tbl-history-948a88cf">
         <thead>
           <tr>
             <th>Name</th>
@@ -283,14 +283,14 @@ system feeding the currently very active volcano.</p>
     Cumbre Vieja volcano; one in the mantle (30-40km depth) which
     charges and in turn feeds a shallower crustal reservoir (10-20km
     depth).</p>
-    <fig id="fig-reservoirs-67f93c45">
+    <fig id="fig-reservoirs-948a88cf">
       <caption><p>Figure 2: Proposed model from Marrero et
       al</p></caption>
       <graphic mimetype="image" mime-subtype="png" xlink:href="images/reservoirs.png" />
     </fig>
     <p>In this paper, we look at recent seismicity data to see if we can
     see evidence of such a system action, see
-    <xref alt="Figure 2" rid="fig-reservoirs-67f93c45">Figure 2</xref>.</p>
+    <xref alt="Figure 2" rid="fig-reservoirs-948a88cf">Figure 2</xref>.</p>
   </sec>
 </sec>
 <sec id="dataset">
@@ -328,17 +328,27 @@ system feeding the currently very active volcano.</p>
       <monospace>matplotlib</monospace> plot, and
       <monospace>seaborn</monospace> plot.</p>
     </disp-quote>
-    <sec id="d7910f53" sec-type="notebook-code">
-    <sec id="d7910f53-output-0" content-type="notebook-output">
-    <graphic mimetype="image" mime-subtype="png" xlink:href="article_files/figure-jats/cell-8-output-1.png" />
+    <sec id="cell-fig-timeline" sec-type="notebook-code">
+    <sec id="cell-fig-timeline-output-0" content-type="notebook-output">
+    <fig id="fig-timeline-948a88cf">
+      <caption><p>Figure 3: Earthquake data over time (n=5465) to
+      understand their distributions spatially, by depth, by magnitude
+      and in time.</p></caption>
+      <graphic mimetype="image" mime-subtype="png" xlink:href="article_files/figure-jats/fig-timeline-output-1.png" />
+    </fig>
     </sec>
     </sec>
   </sec>
   <sec id="cumulative-distribution-plots">
     <title>Cumulative Distribution Plots</title>
-    <sec id="cell-7609bbb1" sec-type="notebook-code">
-    <sec id="7609bbb1-output-0" content-type="notebook-output">
-    <graphic mimetype="image" mime-subtype="png" xlink:href="article_files/figure-jats/cell-10-output-1.png" />
+    <sec id="cell-fig-cumulative" sec-type="notebook-code">
+    <sec id="cell-fig-cumulative-output-0" content-type="notebook-output">
+    <fig id="fig-cumulative-948a88cf">
+      <caption><p>Figure 4: Cumulative earthquake data over time
+      (n=5465) to understand their distributions spatially, by depth and
+      magnitude.</p></caption>
+      <graphic mimetype="image" mime-subtype="png" xlink:href="article_files/figure-jats/fig-cumulative-output-1.png" />
+    </fig>
     </sec>
     </sec>
   </sec>

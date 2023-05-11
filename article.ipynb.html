@@ -285,7 +285,7 @@ p_e = 1-\mathrm{e}^{-t \lambda}
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>sns.set_theme(style<span class="op">=</span><span class="st">"whitegrid"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div>
-<div id="76706a81" class="cell" data-tags="[]">
+<div class="cell-container column-page-left"><div class="cell-decorator"><pre>In [2]:</pre></div><div id="76706a81" class="cell" data-tags="[]" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> make_category_columns(df):</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">'Depth'</span>] <span class="op">=</span> <span class="st">'Shallow (&lt;18km)'</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    df.loc[(df[<span class="st">'Depth(km)'</span>] <span class="op">&gt;=</span> <span class="dv">18</span>) <span class="op">&amp;</span> (df[<span class="st">'Depth(km)'</span>] <span class="op">&lt;=</span> <span class="dv">28</span>), <span class="st">'Depth'</span>] <span class="op">=</span> <span class="st">'Interchange (18km&gt;x&gt;28km)'</span></span>
@@ -298,24 +298,24 @@ p_e = 1-\mathrm{e}^{-t \lambda}
 <span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    df.loc[(df[<span class="st">'Magnitude'</span>] <span class="op">&gt;=</span> <span class="dv">4</span>) <span class="op">&amp;</span> (df[<span class="st">'Magnitude'</span>] <span class="op">&lt;=</span> <span class="dv">5</span>), <span class="st">'Mag'</span>] <span class="op">=</span> <span class="dv">4</span>    </span>
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+</div></div>
 </section>
-<section id="visualising-long-term-earthquake-data" class="level2">
+<section id="visualising-long-term-earthquake-data" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="visualising-long-term-earthquake-data">Visualising Long term earthquake data</h2>
 <p>Data taken directly from the IGN Catalog</p>
 <blockquote class="blockquote">
 <p>Supported cell outputs below include <code>pandas</code> dataframe, raw text output, <code>matplotlib</code> plot, and <code>seaborn</code> plot.</p>
 </blockquote>
-<div id="d4f84df5" class="cell" data-tags="[]">
+<div class="cell-container column-page-left"><div class="cell-decorator"><pre>In [3]:</pre></div><div id="d4f84df5" class="cell" data-tags="[]" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df_ign <span class="op">=</span> pd.read_csv(<span class="st">'./data/lapalma_ign.csv'</span>)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>df_ign <span class="op">=</span> make_category_columns(df_ign)</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>df_ign.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="41ccbc48" class="cell" data-tags="[]">
+</div></div>
+<div class="cell-container column-page-left"><div class="cell-decorator"><pre>In [4]:</pre></div><div id="41ccbc48" class="cell" data-tags="[]" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df_ign[<span class="st">'DateTime'</span>] <span class="op">=</span> pd.to_datetime(df_ign[<span class="st">'Date'</span>] <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> df_ign[<span class="st">'Time'</span>])</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>df_ign[<span class="st">'DateTime'</span>]<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="a3816f99" class="cell" data-tags="[]">
+</div></div>
+<div class="cell-container column-page-left"><div class="cell-decorator"><pre>In [5]:</pre></div><div id="a3816f99" class="cell" data-tags="[]" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df_ign_early <span class="op">=</span> df_ign[df_ign[<span class="st">'DateTime'</span>] <span class="op">&lt;</span> <span class="st">'2021-09-11'</span>]</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>df_ign_pre <span class="op">=</span> df_ign[(df_ign[<span class="st">'DateTime'</span>] <span class="op">&gt;=</span> <span class="st">'2021-09-11'</span>)<span class="op">&amp;</span>(df_ign[<span class="st">'DateTime'</span>] <span class="op">&lt;</span> <span class="st">'2021-09-19 14:13:00'</span>)]</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>df_ign_phase1 <span class="op">=</span> df_ign[(df_ign[<span class="st">'DateTime'</span>] <span class="op">&gt;=</span> <span class="st">'2021-09-19 14:13:00'</span>)<span class="op">&amp;</span>(df_ign[<span class="st">'DateTime'</span>] <span class="op">&lt;</span> <span class="st">'2021-10-01'</span>)]</span>
@@ -329,8 +329,8 @@ p_e = 1-\mathrm{e}^{-t \lambda}
 <span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>df_erupt_3 <span class="op">=</span> df_erupt[(df_erupt[<span class="st">'Magnitude'</span>] <span class="op">&gt;=</span> <span class="fl">2.0</span>)<span class="op">&amp;</span>(df_erupt[<span class="st">'Magnitude'</span>] <span class="op">&lt;</span> <span class="fl">3.0</span>)]</span>
 <span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>df_erupt_4 <span class="op">=</span> df_erupt[(df_erupt[<span class="st">'Magnitude'</span>] <span class="op">&gt;=</span> <span class="fl">3.0</span>)<span class="op">&amp;</span>(df_erupt[<span class="st">'Magnitude'</span>] <span class="op">&lt;</span> <span class="fl">4.0</span>)]</span>
 <span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>df_erupt_5 <span class="op">=</span> df_erupt[df_erupt[<span class="st">'Magnitude'</span>] <span class="op">&gt;</span> <span class="fl">4.0</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="9bd70552" class="cell" data-tags="[]">
+</div></div>
+<div class="cell-container column-page-left"><div class="cell-decorator"><pre>In [6]:</pre></div><div id="9bd70552" class="cell" data-tags="[]" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>tab20_colors <span class="op">=</span> (</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.12156862745098039</span>, <span class="fl">0.4666666666666667</span>,  <span class="fl">0.7058823529411765</span>  ),  <span class="co"># 1f77b4</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.6823529411764706</span>,  <span class="fl">0.7803921568627451</span>,  <span class="fl">0.9098039215686274</span>  ),  <span class="co"># aec7e8</span></span>
@@ -353,8 +353,8 @@ p_e = 1-\mathrm{e}^{-t \lambda}
 <span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.09019607843137255</span>, <span class="fl">0.7450980392156863</span>,  <span class="fl">0.8117647058823529</span>  ),  <span class="co"># 17becf</span></span>
 <span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>    (<span class="fl">0.6196078431372549</span>,  <span class="fl">0.8549019607843137</span>,  <span class="fl">0.8980392156862745</span>),    <span class="co"># 9edae5</span></span>
 <span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="d7910f53" class="cell" data-tags="[]">
+</div></div>
+<div class="cell-container column-page-left"><div class="cell-decorator"><pre>In [7]:</pre></div><div id="cell-fig-timeline" class="cell" data-tags="[]" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib.patches <span class="im">import</span> Rectangle</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> datetime <span class="im">as</span> dt</span>
@@ -436,13 +436,18 @@ p_e = 1-\mathrm{e}^{-t \lambda}
 <span id="cb7-79"><a href="#cb7-79" aria-hidden="true" tabindex="-1"></a>ax_timeline.set_ylabel(<span class="st">"Depth (km)"</span>, <span class="bu">dict</span>(fontsize<span class="op">=</span><span class="dv">20</span>), labelpad<span class="op">=</span><span class="dv">20</span>)</span>
 <span id="cb7-80"><a href="#cb7-80" aria-hidden="true" tabindex="-1"></a>ax_timeline.set_xlabel(<span class="st">"Eruption Timeline"</span>, <span class="bu">dict</span>(fontsize<span class="op">=</span><span class="dv">20</span>), labelpad<span class="op">=</span><span class="dv">20</span>)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<p><img src="article_files/figure-html/cell-8-output-1.png" class="img-fluid"></p>
+<div id="fig-timeline" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="article_files/figure-html/fig-timeline-output-1.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;3: Earthquake data over time (n=5465) to understand their distributions spatially, by depth, by magnitude and in time.</figcaption>
+</figure>
 </div>
 </div>
+</div></div>
 </section>
-<section id="cumulative-distribution-plots" class="level2">
+<section id="cumulative-distribution-plots" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="cumulative-distribution-plots">Cumulative Distribution Plots</h2>
-<div id="d0ea08d9" class="cell" data-tags="[]">
+<div class="cell-container column-page-left"><div class="cell-decorator"><pre>In [8]:</pre></div><div id="d0ea08d9" class="cell" data-tags="[]" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> cumulative_events_mag_depth(df, hue<span class="op">=</span><span class="st">'Depth'</span>, kind<span class="op">=</span><span class="st">'scatter'</span>, ax<span class="op">=</span><span class="va">None</span>, dpi<span class="op">=</span><span class="dv">100</span>, palette<span class="op">=</span><span class="va">None</span>, kde<span class="op">=</span><span class="va">True</span>):</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    matplotlib.rcParams[<span class="st">'ytick.labelright'</span>] <span class="op">=</span> <span class="va">False</span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    g <span class="op">=</span> sns.jointplot(x<span class="op">=</span><span class="st">"Magnitude"</span>, y<span class="op">=</span><span class="st">"Depth(km)"</span>, data<span class="op">=</span>df,</span>
@@ -453,8 +458,8 @@ p_e = 1-\mathrm{e}^{-t \lambda}
 <span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>        g.plot_joint(sns.kdeplot, color<span class="op">=</span><span class="st">"b"</span>, zorder<span class="op">=</span><span class="dv">1</span>, levels<span class="op">=</span><span class="dv">15</span>, ax<span class="op">=</span>ax)</span>
 <span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>    g.fig.axes[<span class="dv">0</span>].invert_yaxis()<span class="op">;</span></span>
 <span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    g.fig.set_dpi(dpi)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="7609bbb1" class="cell">
+</div></div>
+<div class="cell-container column-page-left"><div class="cell-decorator"><pre>In [9]:</pre></div><div id="cell-fig-cumulative" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> warnings.catch_warnings():</span>
@@ -462,9 +467,14 @@ p_e = 1-\mathrm{e}^{-t \lambda}
 <span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    cumulative_events_mag_depth(df_ign, hue<span class="op">=</span><span class="va">None</span>, dpi<span class="op">=</span><span class="dv">200</span>)</span>
 <span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    plt.suptitle(<span class="st">'Cumulative Events 01-01-2017 to 01-01-2022'</span>, y<span class="op">=</span><span class="fl">1.01</span>)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<p><img src="article_files/figure-html/cell-10-output-1.png" class="img-fluid"></p>
+<div id="fig-cumulative" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="article_files/figure-html/fig-cumulative-output-1.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;4: Cumulative earthquake data over time (n=5465) to understand their distributions spatially, by depth and magnitude.</figcaption>
+</figure>
 </div>
 </div>
+</div></div>
 </section>
 </section>
 <section id="results" class="level1">

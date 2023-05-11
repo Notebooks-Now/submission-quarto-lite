@@ -1,10 +1,6 @@
 project:
   type: manuscript
 
-manuscript:
-  article: article.ipynb
-  meca-archive: true
-
 format:
   html:
     format-links: [agu-pdf, docx]

@@ -3,10 +3,11 @@ project:
 
 manuscript:
   meca-archive: true
-  
+  resources:
+    - data/lapalma_ign.csv
+
 format:
   html:
-    format-links: [agu-pdf, docx]
     comments: 
       hypothesis: true
     repo-url: https://github.com/quarto-dev/quarto-demo

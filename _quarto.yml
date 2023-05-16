@@ -3,7 +3,6 @@ project:
 
 manuscript:
   article: article.ipynb
-  meca-archive: true
   resources:
     - data/lapalma_ign.csv
 

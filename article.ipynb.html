@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
     <meta charset="utf-8">
-    <meta name="generator" content="quarto-1.4.72">
+    <meta name="generator" content="quarto-1.4.77">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -346,6 +346,133 @@ p_e = 1-\mathrm{e}^{-t \lambda}
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df_ign <span class="op">=</span> pd.read_csv(<span class="st">'./data/lapalma_ign.csv'</span>)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>df_ign <span class="op">=</span> make_category_columns(df_ign)</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>df_ign.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="3">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Event</th>
+<th data-quarto-table-cell-role="th">Date</th>
+<th data-quarto-table-cell-role="th">Time</th>
+<th data-quarto-table-cell-role="th">Latitude</th>
+<th data-quarto-table-cell-role="th">Longitude</th>
+<th data-quarto-table-cell-role="th">Depth(km)</th>
+<th data-quarto-table-cell-role="th">Intensity</th>
+<th data-quarto-table-cell-role="th">Magnitude</th>
+<th data-quarto-table-cell-role="th">Type Mag</th>
+<th data-quarto-table-cell-role="th">Location</th>
+<th data-quarto-table-cell-role="th">DateTime</th>
+<th data-quarto-table-cell-role="th">Timestamp</th>
+<th data-quarto-table-cell-role="th">Swarm</th>
+<th data-quarto-table-cell-role="th">Phase</th>
+<th data-quarto-table-cell-role="th">Depth</th>
+<th data-quarto-table-cell-role="th">Mag</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>es2017eugju</td>
+<td>2017-03-09</td>
+<td>23:44:06</td>
+<td>28.5346</td>
+<td>-17.8349</td>
+<td>26.0</td>
+<td></td>
+<td>1.6</td>
+<td>4</td>
+<td>NE FUENCALIENTE DE LA PALMA.IL</td>
+<td>2017-03-09 23:44:06</td>
+<td>1489103046000000000</td>
+<td>0.0</td>
+<td>0</td>
+<td>Interchange (18km&gt;x&gt;28km)</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>es2017euhlh</td>
+<td>2017-03-10</td>
+<td>00:16:10</td>
+<td>28.5491</td>
+<td>-17.8459</td>
+<td>27.0</td>
+<td></td>
+<td>2.0</td>
+<td>4</td>
+<td>N FUENCALIENTE DE LA PALMA.ILP</td>
+<td>2017-03-10 00:16:10</td>
+<td>1489104970000000000</td>
+<td>0.0</td>
+<td>0</td>
+<td>Interchange (18km&gt;x&gt;28km)</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>es2017cpaoh</td>
+<td>2017-03-10</td>
+<td>00:16:11</td>
+<td>28.5008</td>
+<td>-17.8863</td>
+<td>20.0</td>
+<td></td>
+<td>2.1</td>
+<td>4</td>
+<td>W LOS CANARIOS.ILP</td>
+<td>2017-03-10 00:16:11</td>
+<td>1489104971000000000</td>
+<td>0.0</td>
+<td>0</td>
+<td>Interchange (18km&gt;x&gt;28km)</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>es2017eunnk</td>
+<td>2017-03-10</td>
+<td>03:20:26</td>
+<td>28.5204</td>
+<td>-17.8657</td>
+<td>30.0</td>
+<td></td>
+<td>1.6</td>
+<td>4</td>
+<td>NW FUENCALIENTE DE LA PALMA.IL</td>
+<td>2017-03-10 03:20:26</td>
+<td>1489116026000000000</td>
+<td>0.0</td>
+<td>0</td>
+<td>Deep (&gt;28km)</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>es2017kajei</td>
+<td>2017-08-21</td>
+<td>02:06:55</td>
+<td>28.5985</td>
+<td>-17.7156</td>
+<td>0.0</td>
+<td></td>
+<td>1.6</td>
+<td>4</td>
+<td>E EL PUEBLO.ILP</td>
+<td>2017-08-21 02:06:55</td>
+<td>1503281215000000000</td>
+<td>0.0</td>
+<td>0</td>
+<td>Shallow (&lt;18km)</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
 </div></div>
 <div class="cell-container column-page-left"><div class="cell-decorator"><pre>In [4]:</pre></div><div id="41ccbc48" class="cell" data-tags="[]" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df_ign[<span class="st">'DateTime'</span>] <span class="op">=</span> pd.to_datetime(df_ign[<span class="st">'Date'</span>] <span class="op">+</span> <span class="st">' '</span> <span class="op">+</span> df_ign[<span class="st">'Time'</span>])</span>

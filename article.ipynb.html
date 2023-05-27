@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
     <meta charset="utf-8">
-    <meta name="generator" content="quarto-1.4.92">
+    <meta name="generator" content="quarto-1.4.100">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-    <meta name="author" content="Steve Purves">
-    <meta name="author" content="Rowan Cockett">
     <meta name="dcterms.date" content="2022-05-11">
     <meta name="keywords" content="La Palma, Earthquakes">
 
@@ -143,9 +141,9 @@
 </head>
   <body class="quarto-notebook">
     <div class="quarto-embed-header">
-      <a href="index.html" class="btn btn-outline-secondary quarto-back-link"><i class="bi bi-caret-left"></i> Back to Article</a>
+      <a href="index.html" class="btn btn-outline-secondary quarto-back-link"><i class="bi bi-caret-left"></i> </a>
       <h6><i class="bi bi-journal-code"></i> Article Notebook</h6>
-      <a href="article.out.ipynb" class="btn btn-primary quarto-download-embed" data-noresolveinput="true" download="article.ipynb">Download Notebook</a>
+      <a href="article.out.ipynb" class="btn btn-primary quarto-download-embed" data-noresolveinput="true" download="article.ipynb"></a>
     </div>
      <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -158,17 +156,13 @@
   <li><a href="#eruption-history" id="toc-eruption-history" class="nav-link" data-scroll-target="#eruption-history">Eruption History</a></li>
   <li><a href="#magma-reservoirs" id="toc-magma-reservoirs" class="nav-link" data-scroll-target="#magma-reservoirs">Magma Reservoirs</a></li>
   </ul></li>
-  <li><a href="#dataset" id="toc-dataset" class="nav-link" data-scroll-target="#dataset">Dataset</a>
-  <ul class="collapse">
+  <li><a href="#dataset" id="toc-dataset" class="nav-link" data-scroll-target="#dataset">Dataset</a></li>
   <li><a href="#main-timeline-figure" id="toc-main-timeline-figure" class="nav-link" data-scroll-target="#main-timeline-figure">Main Timeline Figure</a></li>
   <li><a href="#visualising-long-term-earthquake-data" id="toc-visualising-long-term-earthquake-data" class="nav-link" data-scroll-target="#visualising-long-term-earthquake-data">Visualising Long term earthquake data</a></li>
   <li><a href="#cumulative-distribution-plots" id="toc-cumulative-distribution-plots" class="nav-link" data-scroll-target="#cumulative-distribution-plots">Cumulative Distribution Plots</a></li>
-  </ul></li>
   <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
-  <li><a href="#conclusions" id="toc-conclusions" class="nav-link" data-scroll-target="#conclusions">Conclusions</a>
-  <ul class="collapse">
+  <li><a href="#conclusions" id="toc-conclusions" class="nav-link" data-scroll-target="#conclusions">Conclusions</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
-  </ul></li>
   </ul>
 </nav>
 </div>
@@ -206,7 +200,7 @@
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 11, 2022</p>
+      <p class="date">2022-05-11</p>
     </div>
   </div>
   
@@ -220,7 +214,11 @@
   </div>
 </div>
 
-</header>     <section id="introduction" class="level2">
+</header>     <div id="230857a7" class="cell markdown">
+
+</div>
+<div id="8b06862f" class="cell markdown">
+<section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <blockquote class="blockquote">
 <p>The content of your notebook may be broken into any number of markdown or code cells. Markdown cells use Quarto markdown. Quarto markdown supports an extended version of the basic Markdown syntax originally created by John Gruber, which adds support for many common document elements including citations, figures, tables, admonitions, and more. Quarto markdown also supports the use of LaTeX for mathematical equations, advanced layout control, as well as other advanced formatting.</p>
@@ -243,7 +241,7 @@
 <p>Quarto supports a number of ways to create tables using both standard markdown tables (pipe tables) and more complex markdown tables using a grid style syntax (grid tables). In addition, Quarto provides the ability to control column width, caption position, create subtables, and more. See <a href="https://quarto.org/docs/authoring/tables.html">Quarto’s table document</a> to learn more. Refer to tables in the text by their label (e.g.&nbsp;<code>@tbl-history</code>).</p>
 </blockquote>
 <div id="tbl-history" class="anchored">
-<table class="table">
+<table class="table table-sm table-striped small">
 <caption>Table&nbsp;1: Recent historic eruptions on La Palma</caption>
 <thead>
 <tr class="header">
@@ -315,17 +313,24 @@ p_e = 1-\mathrm{e}^{-t \lambda}
 <p>In this paper, we look at recent seismicity data to see if we can see evidence of such a system action, see <a href="#fig-reservoirs" class="quarto-xref">Figure&nbsp;2</a>.</p>
 </section>
 </section>
-<section id="dataset" class="level1 page-columns page-full">
+</div>
+<div id="1c7a031d" class="cell markdown">
+<section id="dataset" class="level1">
 <h1>Dataset</h1>
 <blockquote class="blockquote">
 <p>All data used in the notebook should be present in the <code>data/</code> folder so notebooks may be executed in place with no additional input.</p>
 </blockquote>
 <p>The earthquake dataset used in our analysis was generated from the <a href="https://www.ign.es/web/resources/volcanologia/tproximos/canarias.html">IGN web portal</a> this is public data released under a permissive license. Data recorded using the network of Seismic Monitoring Stations on the island. A web scraping script was developed to pull data into a machine-readable form for analysis. That code tool <a href="https://github.com/stevejpurves/ign-earthquake-data">is available on GitHub</a> along with a copy of recently updated data.</p>
-<section id="main-timeline-figure" class="level2 page-columns page-full">
+</section>
+</div>
+<div id="63a26a1c" class="cell markdown">
+<section id="main-timeline-figure" class="level2">
 <h2 class="anchored" data-anchor-id="main-timeline-figure">Main Timeline Figure</h2>
 <blockquote class="blockquote">
 <p>Code cells may be seamlessly interleaved with markdown cells. There are a variety of execution options to control the behavior of code cells - learn more in <a href="https://quarto.org/docs/computations/execution-options.html">Quarto’s documentation on execution options</a>.</p>
 </blockquote>
+</section>
+</div>
 <div class="cell-container column-page-left"><div class="cell-decorator"><pre>In [1]:</pre></div><div id="184d6123" class="cell" data-tags="[]" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib</span>
@@ -349,13 +354,15 @@ p_e = 1-\mathrm{e}^{-t \lambda}
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div>
-</section>
-<section id="visualising-long-term-earthquake-data" class="level2 page-columns page-full">
+<div id="3de56b46" class="cell markdown">
+<section id="visualising-long-term-earthquake-data" class="level2">
 <h2 class="anchored" data-anchor-id="visualising-long-term-earthquake-data">Visualising Long term earthquake data</h2>
 <p>Data taken directly from the IGN Catalog</p>
 <blockquote class="blockquote">
 <p>Supported cell outputs below include <code>pandas</code> dataframe, raw text output, <code>matplotlib</code> plot, and <code>seaborn</code> plot.</p>
 </blockquote>
+</section>
+</div>
 <div class="cell-container column-page-left"><div class="cell-decorator"><pre>In [3]:</pre></div><div id="d4f84df5" class="cell" data-tags="[]" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df_ign <span class="op">=</span> pd.read_csv(<span class="st">'./data/lapalma_ign.csv'</span>)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>df_ign <span class="op">=</span> make_category_columns(df_ign)</span>
@@ -621,9 +628,11 @@ p_e = 1-\mathrm{e}^{-t \lambda}
 </div>
 </div>
 </div></div>
-</section>
-<section id="cumulative-distribution-plots" class="level2 page-columns page-full">
+<div id="6014701a" class="cell markdown">
+<section id="cumulative-distribution-plots" class="level2">
 <h2 class="anchored" data-anchor-id="cumulative-distribution-plots">Cumulative Distribution Plots</h2>
+</section>
+</div>
 <div class="cell-container column-page-left"><div class="cell-decorator"><pre>In [8]:</pre></div><div id="d0ea08d9" class="cell" data-tags="[]" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> cumulative_events_mag_depth(df, hue<span class="op">=</span><span class="st">'Depth'</span>, kind<span class="op">=</span><span class="st">'scatter'</span>, ax<span class="op">=</span><span class="va">None</span>, dpi<span class="op">=</span><span class="dv">100</span>, palette<span class="op">=</span><span class="va">None</span>, kde<span class="op">=</span><span class="va">True</span>):</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    matplotlib.rcParams[<span class="st">'ytick.labelright'</span>] <span class="op">=</span> <span class="va">False</span></span>
@@ -652,8 +661,7 @@ p_e = 1-\mathrm{e}^{-t \lambda}
 </div>
 </div>
 </div></div>
-</section>
-</section>
+<div id="a8eb85c8" class="cell markdown">
 <section id="results" class="level1">
 <h1>Results</h1>
 <p>The dataset was loaded into this Jupyter notebook and filtered down to La Palma events only. This results in 5465 data points which we then visualized to understand their distributions spatially, by depth, by magnitude and in time.</p>
@@ -662,14 +670,21 @@ p_e = 1-\mathrm{e}^{-t \lambda}
 <p>After the eruption, continuous shallow seismicity started at 10-15km corresponding to magma movement in the crustal reservoir.</p>
 <p>Subsequently, high magnitude events begin occurring at 30-40km depths corresponding to changes in the mantle reservoir. These are also continuous but occur with a lower frequency than in the crustal reservoir.</p>
 </section>
+</div>
+<div id="f0774682" class="cell markdown">
 <section id="conclusions" class="level1">
 <h1>Conclusions</h1>
 <p>From the analysis of the earthquake data collected and published by IGN for the period of 11 September through to 9 November 2021. Visualization of the earthquake events at different depths appears to confirm the presence of both mantle and crustal reservoirs as proposed by <span class="citation" data-cites="marrero2019">Marrero et al. (<a href="#ref-marrero2019" role="doc-biblioref">2019</a>)</span>.</p>
+</section>
+</div>
+<div id="e445a1b1" class="cell markdown">
 <blockquote class="blockquote">
 <p>Data availability statement should be specified in a separate cell with metadata <code>"part": "availability"</code>, similar to the abstract.</p>
 <p>AGU requires an Availability Statement for the underlying data needed to understand, evaluate, and build upon the reported research at the time of peer review and publication.</p>
 </blockquote>
 <p>A web scraping script was developed to pull data into a machine-readable form for analysis. That code tool <a href="https://github.com/stevejpurves/ign-earthquake-data">is available on GitHub</a> along with a copy of recently updated data.</p>
+</div>
+<div id="411eb897-43aa-4fe6-b9df-ed24ef2581c3" class="cell markdown">
 <section id="references" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
@@ -678,7 +693,7 @@ Marrero, José, Alicia García, Manuel Berrocoso, Ángeles Llinares, Antonio Rod
 </div>
 </div>
 </section>
-</section>
+</div>
      </main>
 <!-- /main column -->  <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

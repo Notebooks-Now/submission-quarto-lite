@@ -476,6 +476,7 @@ system feeding the currently very active volcano.</p>
 </front-stub>
 
 <body>
+<sec id="cell-8b06862f-nb-article" specific-use="notebook-content">
 <sec id="introduction-nb-article">
   <title>Introduction</title>
   <disp-quote>
@@ -652,6 +653,8 @@ system feeding the currently very active volcano.</p>
     <p>In this paper, we look at recent seismicity data to see if we can
     see evidence of such a system action, see
     <xref alt="Figure 2" rid="fig-reservoirs-nb-article">Figure 2</xref>.</p>
+    </sec>
+    <sec id="cell-1c7a031d-nb-article" specific-use="notebook-content">
   </sec>
 </sec>
 <sec id="dataset-nb-article">
@@ -670,6 +673,8 @@ system feeding the currently very active volcano.</p>
   <ext-link ext-link-type="uri" xlink:href="https://github.com/stevejpurves/ign-earthquake-data">is
   available on GitHub</ext-link> along with a copy of recently updated
   data.</p>
+  </sec>
+  <sec id="cell-63a26a1c-nb-article" specific-use="notebook-content">
   <sec id="main-timeline-figure-nb-article">
     <title>Main Timeline Figure</title>
     <disp-quote>
@@ -679,6 +684,7 @@ system feeding the currently very active volcano.</p>
       <ext-link ext-link-type="uri" xlink:href="https://quarto.org/docs/computations/execution-options.html">Quarto’s
       documentation on execution options</ext-link>.</p>
     </disp-quote>
+    </sec>
     <sec id="cell-184d6123-nb-article" specific-use="notebook-code">
     <code language="python">import pandas as pd
 import matplotlib
@@ -702,6 +708,7 @@ sns.set_theme(style=&quot;whitegrid&quot;)</code>
     
     return df</code>
     </sec>
+    <sec id="cell-3de56b46-nb-article" specific-use="notebook-content">
   </sec>
   <sec id="visualising-long-term-earthquake-data-nb-article">
     <title>Visualising Long term earthquake data</title>
@@ -712,6 +719,7 @@ sns.set_theme(style=&quot;whitegrid&quot;)</code>
       <monospace>matplotlib</monospace> plot, and
       <monospace>seaborn</monospace> plot.</p>
     </disp-quote>
+    </sec>
     <sec id="d4f84df5-nb-article" specific-use="notebook-code">
     <code language="python">df_ign = pd.read_csv('./data/lapalma_ign.csv')
 df_ign = make_category_columns(df_ign)
@@ -976,9 +984,11 @@ ax_timeline.set_xlabel(&quot;Eruption Timeline&quot;, dict(fontsize=20), labelpa
     </fig>
     </sec>
     </sec>
+    <sec id="cell-6014701a-nb-article" specific-use="notebook-content">
   </sec>
   <sec id="cumulative-distribution-plots-nb-article">
     <title>Cumulative Distribution Plots</title>
+    </sec>
     <sec id="d0ea08d9-nb-article" specific-use="notebook-code">
     <code language="python">def cumulative_events_mag_depth(df, hue='Depth', kind='scatter', ax=None, dpi=100, palette=None, kde=True):
     matplotlib.rcParams['ytick.labelright'] = False
@@ -1007,6 +1017,7 @@ with warnings.catch_warnings():
     </fig>
     </sec>
     </sec>
+    <sec id="a8eb85c8-nb-article" specific-use="notebook-content">
   </sec>
 </sec>
 <sec id="results-nb-article">
@@ -1026,6 +1037,8 @@ with warnings.catch_warnings():
   depths corresponding to changes in the mantle reservoir. These are
   also continuous but occur with a lower frequency than in the crustal
   reservoir.</p>
+  </sec>
+  <sec id="f0774682-nb-article" specific-use="notebook-content">
 </sec>
 <sec id="conclusions-nb-article">
   <title>Conclusions</title>
@@ -1035,6 +1048,8 @@ with warnings.catch_warnings():
   confirm the presence of both mantle and crustal reservoirs as proposed
   by Marrero et al.
   (<xref alt="2019" rid="ref-marrero2019-nb-article" ref-type="bibr">2019</xref>).</p>
+  </sec>
+  <sec id="e445a1b1-nb-article" specific-use="notebook-content">
   <disp-quote>
     <p>Data availability statement should be specified in a separate
     cell with metadata
@@ -1049,8 +1064,11 @@ with warnings.catch_warnings():
   <ext-link ext-link-type="uri" xlink:href="https://github.com/stevejpurves/ign-earthquake-data">is
   available on GitHub</ext-link> along with a copy of recently updated
   data.</p>
+  </sec>
+  <sec id="cell-411eb897-43aa-4fe6-b9df-ed24ef2581c3-nb-article" specific-use="notebook-content">
   <sec id="references-nb-article">
     <title>References</title>
+    </sec>
   </sec>
 </sec>
 </body>

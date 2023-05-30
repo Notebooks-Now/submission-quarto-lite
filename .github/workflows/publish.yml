@@ -18,11 +18,6 @@ jobs:
           version: pre-release
           tinytex: true
           
-      - name: Test Git Commands
-        run: |
-          git config --list --show-origin
-          git ls-remote origin          
-          
       - name: Render and Publish 
         uses: quarto-dev/quarto-actions/publish@v2
         with:

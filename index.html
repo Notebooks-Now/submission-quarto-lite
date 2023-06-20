@@ -2,12 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.111">
+<meta name="generator" content="quarto-1.4.159">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Steve Purves">
-<meta name="author" content="Rowan Cockett">
 <meta name="dcterms.date" content="2022-05-11">
 <meta name="keywords" content="La Palma, Earthquakes">
 
@@ -109,7 +107,7 @@ div.csl-indent {
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="article.pdf"><i class="bi bi-file-pdf"></i>PDF (agu)</a></li><li><a href="article.docx"><i class="bi bi-file-word"></i>MS Word</a></li><li><a href="article-meca.zip" data-meca-link="true"><i class="bi bi-archive"></i>MECA Archive</a></li></ul></div><div class="quarto-alternate-notebooks"><h2>Notebooks</h2><ul><li><a href="article.ipynb.html"><i class="bi bi-journal-code"></i>Article Notebook</a></li></ul></div><div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="https://github.com/Notebooks-Now/submission-quarto-lite/"><i class="bi bi-github"></i>GitHub Repo</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="article.pdf"><i class="bi bi-file-pdf"></i>PDF (agu)</a></li><li><a href="article.docx"><i class="bi bi-file-word"></i>MS Word</a></li><li><a href="article-meca.zip" data-meca-link="true"><i class="bi bi-archive"></i>MECA Bundle</a></li></ul></div><div class="quarto-alternate-notebooks"><h2>Notebooks</h2><ul><li><a href="article.ipynb.html"><i class="bi bi-journal-code"></i>Article Notebook</a></li></ul></div><div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="https://github.com/Notebooks-Now/submission-quarto-lite/"><i class="bi bi-github"></i>GitHub Repo</a></li></ul></div></nav>
 </div>
 <main class="content" id="quarto-document-content">
 
@@ -147,7 +145,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 11, 2022</p>
+      <p class="date">2022-05-11</p>
     </div>
   </div>
   
@@ -185,7 +183,6 @@ div.csl-indent {
 <blockquote class="blockquote">
 <p>Quarto supports a number of ways to create tables using both standard markdown tables (pipe tables) and more complex markdown tables using a grid style syntax (grid tables). In addition, Quarto provides the ability to control column width, caption position, create subtables, and more. See <a href="https://quarto.org/docs/authoring/tables.html">Quarto’s table document</a> to learn more. Refer to tables in the text by their label (e.g.&nbsp;<code>@tbl-history</code>).</p>
 </blockquote>
-<div id="tbl-history" class="anchored">
 <table class="table">
 <caption>Table&nbsp;1: Recent historic eruptions on La Palma</caption>
 <thead>
@@ -229,7 +226,6 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
-</div>
 <p>This equates to an eruption on average every 79 years up until the 1971 event. The probability of a future eruption can be modeled by a Poisson distribution <a href="#eq-poisson" class="quarto-xref">Equation&nbsp;1</a>.</p>
 <blockquote class="blockquote">
 <p>Numbered equations may be defined using ‘dollar math’ by placing equations between matching pairs of dollar signs. Learn more about Quarto’s equation here: <a href="https://quarto.org/docs/authoring/cross-references.html#equations">https://quarto.org/docs/authoring/cross-references.html#equations</a>. Refer to equations in the text by their label (e.g.&nbsp;<code>@eq-poisson</code>).</p>
@@ -298,7 +294,7 @@ p_e = 1-\mathrm{e}^{-t \lambda}
 </figure>
 </div>
 </div>
-</div>
+<a class="quarto-notebook-link" id="nblink-2" href="article.ipynb.html#cell-fig-cumulative">Source: Article Notebook</a></div>
 </section>
 </section>
 <section id="results" class="level1">
@@ -505,7 +501,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
           const parser = new DOMParser();
           const htmlDoc = parser.parseFromString(html, "text/html");
           const note = htmlDoc.getElementById(id);
-          console.log(htmlDoc.body.innerHTML);
           if (note !== null) {
             const html = processXRef(id, note);
             instance.setContent(html);
@@ -645,6 +640,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 

@@ -172,7 +172,7 @@ system feeding the currently very active volcano.</p>
       <caption>
         <p>Table 1: Recent historic eruptions on La Palma</p>
       </caption>
-      <table>
+      <table id="tbl-history">
         <thead>
           <tr>
             <th>Name</th>
@@ -411,7 +411,7 @@ system feeding the currently very active volcano.</p>
 </ref-list>
 </back>
 
-<sub-article article-type="notebook">
+<sub-article article-type="notebook" id="nb-3-nb-article">
 <front-stub>
 <title-group>
 <article-title>La Palma Earthquakes</article-title>

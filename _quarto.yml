@@ -10,6 +10,8 @@ format:
   html:
     comments: 
       hypothesis: true
+    citations-hover: true
+    crossrefs-hover: true
   agu-pdf: default
   docx: default
   jats: default

@@ -12,6 +12,7 @@ format:
       hypothesis: true
     citations-hover: true
     crossrefs-hover: true
+    toc-location: left
   agu-pdf: default
   docx: default
   jats: default

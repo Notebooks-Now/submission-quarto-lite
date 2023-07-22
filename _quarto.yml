@@ -8,11 +8,13 @@ manuscript:
 
 format:
   html:
+    theme: cosmo
     comments: 
       hypothesis: true
     citations-hover: true
     crossrefs-hover: true
     toc-location: left
+    title-block-style: manuscript
   agu-pdf: default
   docx: default
   jats: default

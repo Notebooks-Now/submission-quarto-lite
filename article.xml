@@ -117,35 +117,12 @@ system feeding the currently very active volcano.</p>
 <body>
 <sec id="introduction">
   <title>Introduction</title>
-  <disp-quote>
-    <p>The content of your notebook may be broken into any number of
-    markdown or code cells. Markdown cells use Quarto markdown. Quarto
-    markdown supports an extended version of the basic Markdown syntax
-    originally created by John Gruber, which adds support for many
-    common document elements including citations, figures, tables,
-    admonitions, and more. Quarto markdown also supports the use of
-    LaTeX for mathematical equations, advanced layout control, as well
-    as other advanced formatting.</p>
-  </disp-quote>
   <p>La Palma is one of the west most islands in the Volcanic
   Archipelago of the Canary Islands, a Spanish territory situated is the
   Atlantic Ocean where at their closest point are 100km from the African
   coast <xref alt="Figure 1" rid="fig-map">Figure 1</xref>. The island
   is one of the youngest, remains active and is still in the island
   forming stage.</p>
-  <disp-quote>
-    <p>Figures may be added to your notebook using
-    <ext-link ext-link-type="uri" xlink:href="https://quarto.org/docs/authoring/figures.html">markdown
-    images or specifial markdown elements</ext-link> (‘fenced divs’).
-    They may refer to images saved in your
-    <monospace>images/</monospace> folder (or other folders), images
-    from the web, or generated directly using code cells. You may embed
-    figures produced in other notebooks using the
-    <ext-link ext-link-type="uri" xlink:href="https://quarto.org/docs/authoring/notebook-embed.html">embed
-    shortcode</ext-link> (this embed figures, tables, or any other
-    content from Jupyter Notebooks). Refer to figures by their label
-    (e.g. <monospace>@fig-map</monospace>).</p>
-  </disp-quote>
   <fig id="fig-map">
     <caption><p>Figure 1: Map of La Palma in the Canary Islands. Image
     credit
@@ -161,17 +138,6 @@ system feeding the currently very active volcano.</p>
     <p>A number of eruptions were recorded since the colonization of the
     islands by Europeans in the late 1400s, these are summarised in
     <xref alt="Table 1" rid="tbl-history">Table 1</xref>.</p>
-    <disp-quote>
-      <p>Quarto supports a number of ways to create tables using both
-      standard markdown tables (pipe tables) and more complex markdown
-      tables using a grid style syntax (grid tables). In addition,
-      Quarto provides the ability to control column width, caption
-      position, create subtables, and more. See
-      <ext-link ext-link-type="uri" xlink:href="https://quarto.org/docs/authoring/tables.html">Quarto’s
-      table document</ext-link> to learn more. Refer to tables in the
-      text by their label
-      (e.g. <monospace>@tbl-history</monospace>).</p>
-    </disp-quote>
     <table-wrap>
       <caption>
         <p>Table 1: Recent historic eruptions on La Palma</p>
@@ -223,14 +189,6 @@ system feeding the currently very active volcano.</p>
     the 1971 event. The probability of a future eruption can be modeled
     by a Poisson distribution
     <xref alt="Equation 1" rid="eq-poisson">Equation 1</xref>.</p>
-    <disp-quote>
-      <p>Numbered equations may be defined using ‘dollar math’ by
-      placing equations between matching pairs of dollar signs. Learn
-      more about Quarto’s equation here:
-      <ext-link ext-link-type="uri" xlink:href="https://quarto.org/docs/authoring/cross-references.html#equations">https://quarto.org/docs/authoring/cross-references.html#equations</ext-link>.
-      Refer to equations in the text by their label
-      (e.g. <monospace>@eq-poisson</monospace>).</p>
-    </disp-quote>
     <p><styled-content id="eq-poisson"><disp-formula><alternatives>
     <tex-math><![CDATA[
     p(x)=\frac{e^{-\lambda} \lambda^{x}}{x !}
@@ -264,18 +222,6 @@ system feeding the currently very active volcano.</p>
   </sec>
   <sec id="magma-reservoirs">
     <title>Magma Reservoirs</title>
-    <disp-quote>
-      <p>You may provide the bibliography directly as a bibtex,
-      biblatex, CSL JSON, or CSL YAML file (defined in the document
-      front matter or <monospace>_quarto.yml</monospace> project file)
-      then embed the citation by citation key in your text using the
-      <monospace>[@cite]</monospace> or <monospace>@cite</monospace> for
-      parenthetical or textual citations, respectively. The following
-      paragraph provides an example of this. Quarto’s
-      <ext-link ext-link-type="uri" xlink:href="https://quarto.org/docs/authoring/footnotes-and-citations.html">documentation
-      on citations</ext-link> provides more details on working with
-      bibliographies and citations.</p>
-    </disp-quote>
     <p>Studies of the magma systems feeding the volcano, such as Marrero
     et al.
     (<xref alt="2019" rid="ref-marrero2019" ref-type="bibr">2019</xref>)
@@ -295,11 +241,6 @@ system feeding the currently very active volcano.</p>
 </sec>
 <sec id="dataset">
   <title>Dataset</title>
-  <disp-quote>
-    <p>All data used in the notebook should be present in the
-    <monospace>data/</monospace> folder so notebooks may be executed in
-    place with no additional input.</p>
-  </disp-quote>
   <p>The earthquake dataset used in our analysis was generated from the
   <ext-link ext-link-type="uri" xlink:href="https://www.ign.es/web/resources/volcanologia/tproximos/canarias.html">IGN
   web portal</ext-link> this is public data released under a permissive
@@ -309,41 +250,28 @@ system feeding the currently very active volcano.</p>
   <ext-link ext-link-type="uri" xlink:href="https://github.com/stevejpurves/ign-earthquake-data">is
   available on GitHub</ext-link> along with a copy of recently updated
   data.</p>
-  <sec id="main-timeline-figure">
-    <title>Main Timeline Figure</title>
-    <disp-quote>
-      <p>Code cells may be seamlessly interleaved with markdown cells.
-      There are a variety of execution options to control the behavior
-      of code cells - learn more in
-      <ext-link ext-link-type="uri" xlink:href="https://quarto.org/docs/computations/execution-options.html">Quarto’s
-      documentation on execution options</ext-link>.</p>
-    </disp-quote>
-  </sec>
-  <sec id="visualising-long-term-earthquake-data">
-    <title>Visualising Long term earthquake data</title>
-    <p>Data taken directly from the IGN Catalog</p>
-    <disp-quote>
-      <p>Supported cell outputs below include
-      <monospace>pandas</monospace> dataframe, raw text output,
-      <monospace>matplotlib</monospace> plot, and
-      <monospace>seaborn</monospace> plot.</p>
-    </disp-quote>
-    <fig id="fig-timeline">
-      <caption><p>Figure 3: Earthquake data over time (n=5465) to
-      understand their distributions spatially, by depth, by magnitude
-      and in time.</p></caption>
-      <graphic mimetype="image" mime-subtype="png" xlink:href="article_files/figure-jats/fig-timeline-output-1.png" />
-    </fig>
-  </sec>
-  <sec id="cumulative-distribution-plots">
-    <title>Cumulative Distribution Plots</title>
-    <fig id="fig-cumulative">
-      <caption><p>Figure 4: Cumulative earthquake data over time
-      (n=5465) to understand their distributions spatially, by depth and
-      magnitude.</p></caption>
-      <graphic mimetype="image" mime-subtype="png" xlink:href="article_files/figure-jats/fig-cumulative-output-1.png" />
-    </fig>
-  </sec>
+</sec>
+<sec id="main-timeline-figure">
+  <title>Main Timeline Figure</title>
+</sec>
+<sec id="visualising-long-term-earthquake-data">
+  <title>Visualising Long term earthquake data</title>
+  <p>Data taken directly from the IGN Catalog</p>
+  <fig id="fig-timeline">
+    <caption><p>Figure 3: Earthquake data over time (n=5465) to
+    understand their distributions spatially, by depth, by magnitude and
+    in time.</p></caption>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="article_files/figure-jats/fig-timeline-output-1.png" />
+  </fig>
+</sec>
+<sec id="cumulative-distribution-plots">
+  <title>Cumulative Distribution Plots</title>
+  <fig id="fig-cumulative">
+    <caption><p>Figure 4: Cumulative earthquake data over time (n=5465)
+    to understand their distributions spatially, by depth and
+    magnitude.</p></caption>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="article_files/figure-jats/fig-cumulative-output-1.png" />
+  </fig>
 </sec>
 <sec id="results">
   <title>Results</title>
@@ -371,48 +299,39 @@ system feeding the currently very active volcano.</p>
   confirm the presence of both mantle and crustal reservoirs as proposed
   by Marrero et al.
   (<xref alt="2019" rid="ref-marrero2019" ref-type="bibr">2019</xref>).</p>
-  <disp-quote>
-    <p>Data availability statement should be specified in a separate
-    cell with metadata
-    <monospace>&quot;part&quot;: &quot;availability&quot;</monospace>,
-    similar to the abstract.</p>
-    <p>AGU requires an Availability Statement for the underlying data
-    needed to understand, evaluate, and build upon the reported research
-    at the time of peer review and publication.</p>
-  </disp-quote>
+</sec>
+<sec id="availability">
+  <title>Availability</title>
   <p>A web scraping script was developed to pull data into a
   machine-readable form for analysis. That code tool
   <ext-link ext-link-type="uri" xlink:href="https://github.com/stevejpurves/ign-earthquake-data">is
   available on GitHub</ext-link> along with a copy of recently updated
   data.</p>
-  <sec id="references">
-    <title>References</title>
-    <ref-list>
-      <ref id="ref-marrero2019">
-        <element-citation publication-type="article-journal">
-          <person-group person-group-type="author">
-            <name><surname>Marrero</surname><given-names>José</given-names></name>
-            <name><surname>García</surname><given-names>Alicia</given-names></name>
-            <name><surname>Berrocoso</surname><given-names>Manuel</given-names></name>
-            <name><surname>Llinares</surname><given-names>Ángeles</given-names></name>
-            <name><surname>Rodríguez-Losada</surname><given-names>Antonio</given-names></name>
-            <name><surname>Ortiz</surname><given-names>R.</given-names></name>
-          </person-group>
-          <article-title>Strategies for the development of volcanic hazard maps in monogenetic volcanic fields: The example of La Palma (Canary Islands)</article-title>
-          <source>Journal of Applied Volcanology</source>
-          <year iso-8601-date="2019-07">2019</year><month>07</month>
-          <volume>8</volume>
-          <pub-id pub-id-type="doi">10.1186/s13617-019-0085-5</pub-id>
-          <fpage></fpage>
-          <lpage></lpage>
-        </element-citation>
-      </ref>
-    </ref-list>
-  </sec>
 </sec>
 </body>
 
 <back>
+<ref-list>
+  <ref id="ref-marrero2019">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Marrero</surname><given-names>José</given-names></name>
+        <name><surname>García</surname><given-names>Alicia</given-names></name>
+        <name><surname>Berrocoso</surname><given-names>Manuel</given-names></name>
+        <name><surname>Llinares</surname><given-names>Ángeles</given-names></name>
+        <name><surname>Rodríguez-Losada</surname><given-names>Antonio</given-names></name>
+        <name><surname>Ortiz</surname><given-names>R.</given-names></name>
+      </person-group>
+      <article-title>Strategies for the development of volcanic hazard maps in monogenetic volcanic fields: The example of La Palma (Canary Islands)</article-title>
+      <source>Journal of Applied Volcanology</source>
+      <year iso-8601-date="2019-07">2019</year><month>07</month>
+      <volume>8</volume>
+      <pub-id pub-id-type="doi">10.1186/s13617-019-0085-5</pub-id>
+      <fpage></fpage>
+      <lpage></lpage>
+    </element-citation>
+  </ref>
+</ref-list>
 </back>
 
 <sub-article article-type="notebook" id="nb-3-nb-article">
@@ -479,35 +398,12 @@ system feeding the currently very active volcano.</p>
 <sec id="cell-8b06862f-nb-article" specific-use="notebook-content">
 <sec id="introduction-nb-article">
   <title>Introduction</title>
-  <disp-quote>
-    <p>The content of your notebook may be broken into any number of
-    markdown or code cells. Markdown cells use Quarto markdown. Quarto
-    markdown supports an extended version of the basic Markdown syntax
-    originally created by John Gruber, which adds support for many
-    common document elements including citations, figures, tables,
-    admonitions, and more. Quarto markdown also supports the use of
-    LaTeX for mathematical equations, advanced layout control, as well
-    as other advanced formatting.</p>
-  </disp-quote>
   <p>La Palma is one of the west most islands in the Volcanic
   Archipelago of the Canary Islands, a Spanish territory situated is the
   Atlantic Ocean where at their closest point are 100km from the African
   coast <xref alt="Figure 1" rid="fig-map-nb-article">Figure 1</xref>. The island
   is one of the youngest, remains active and is still in the island
   forming stage.</p>
-  <disp-quote>
-    <p>Figures may be added to your notebook using
-    <ext-link ext-link-type="uri" xlink:href="https://quarto.org/docs/authoring/figures.html">markdown
-    images or specifial markdown elements</ext-link> (‘fenced divs’).
-    They may refer to images saved in your
-    <monospace>images/</monospace> folder (or other folders), images
-    from the web, or generated directly using code cells. You may embed
-    figures produced in other notebooks using the
-    <ext-link ext-link-type="uri" xlink:href="https://quarto.org/docs/authoring/notebook-embed.html">embed
-    shortcode</ext-link> (this embed figures, tables, or any other
-    content from Jupyter Notebooks). Refer to figures by their label
-    (e.g. <monospace>@fig-map</monospace>).</p>
-  </disp-quote>
   <fig id="fig-map-nb-article">
     <caption><p>Figure 1: Map of La Palma in the Canary Islands. Image
     credit
@@ -523,17 +419,6 @@ system feeding the currently very active volcano.</p>
     <p>A number of eruptions were recorded since the colonization of the
     islands by Europeans in the late 1400s, these are summarised in
     <xref alt="Table 1" rid="tbl-history-nb-article">Table 1</xref>.</p>
-    <disp-quote>
-      <p>Quarto supports a number of ways to create tables using both
-      standard markdown tables (pipe tables) and more complex markdown
-      tables using a grid style syntax (grid tables). In addition,
-      Quarto provides the ability to control column width, caption
-      position, create subtables, and more. See
-      <ext-link ext-link-type="uri" xlink:href="https://quarto.org/docs/authoring/tables.html">Quarto’s
-      table document</ext-link> to learn more. Refer to tables in the
-      text by their label
-      (e.g. <monospace>@tbl-history</monospace>).</p>
-    </disp-quote>
     <table-wrap>
       <caption>
         <p>Table 1: Recent historic eruptions on La Palma</p>
@@ -585,14 +470,6 @@ system feeding the currently very active volcano.</p>
     the 1971 event. The probability of a future eruption can be modeled
     by a Poisson distribution
     <xref alt="Equation 1" rid="eq-poisson-nb-article">Equation 1</xref>.</p>
-    <disp-quote>
-      <p>Numbered equations may be defined using ‘dollar math’ by
-      placing equations between matching pairs of dollar signs. Learn
-      more about Quarto’s equation here:
-      <ext-link ext-link-type="uri" xlink:href="https://quarto.org/docs/authoring/cross-references.html#equations">https://quarto.org/docs/authoring/cross-references.html#equations</ext-link>.
-      Refer to equations in the text by their label
-      (e.g. <monospace>@eq-poisson</monospace>).</p>
-    </disp-quote>
     <p><styled-content id="eq-poisson-nb-article"><disp-formula><alternatives>
     <tex-math><![CDATA[
     p(x)=\frac{e^{-\lambda} \lambda^{x}}{x !}
@@ -626,18 +503,6 @@ system feeding the currently very active volcano.</p>
   </sec>
   <sec id="magma-reservoirs-nb-article">
     <title>Magma Reservoirs</title>
-    <disp-quote>
-      <p>You may provide the bibliography directly as a bibtex,
-      biblatex, CSL JSON, or CSL YAML file (defined in the document
-      front matter or <monospace>_quarto.yml</monospace> project file)
-      then embed the citation by citation key in your text using the
-      <monospace>[@cite]</monospace> or <monospace>@cite</monospace> for
-      parenthetical or textual citations, respectively. The following
-      paragraph provides an example of this. Quarto’s
-      <ext-link ext-link-type="uri" xlink:href="https://quarto.org/docs/authoring/footnotes-and-citations.html">documentation
-      on citations</ext-link> provides more details on working with
-      bibliographies and citations.</p>
-    </disp-quote>
     <p>Studies of the magma systems feeding the volcano, such as Marrero
     et al.
     (<xref alt="2019" rid="ref-marrero2019-nb-article" ref-type="bibr">2019</xref>)
@@ -659,11 +524,6 @@ system feeding the currently very active volcano.</p>
 </sec>
 <sec id="dataset-nb-article">
   <title>Dataset</title>
-  <disp-quote>
-    <p>All data used in the notebook should be present in the
-    <monospace>data/</monospace> folder so notebooks may be executed in
-    place with no additional input.</p>
-  </disp-quote>
   <p>The earthquake dataset used in our analysis was generated from the
   <ext-link ext-link-type="uri" xlink:href="https://www.ign.es/web/resources/volcanologia/tproximos/canarias.html">IGN
   web portal</ext-link> this is public data released under a permissive
@@ -675,27 +535,21 @@ system feeding the currently very active volcano.</p>
   data.</p>
   </sec>
   <sec id="cell-63a26a1c-nb-article" specific-use="notebook-content">
-  <sec id="main-timeline-figure-nb-article">
-    <title>Main Timeline Figure</title>
-    <disp-quote>
-      <p>Code cells may be seamlessly interleaved with markdown cells.
-      There are a variety of execution options to control the behavior
-      of code cells - learn more in
-      <ext-link ext-link-type="uri" xlink:href="https://quarto.org/docs/computations/execution-options.html">Quarto’s
-      documentation on execution options</ext-link>.</p>
-    </disp-quote>
-    </sec>
-    <sec id="cell-184d6123-nb-article" specific-use="notebook-code">
-    <code language="python">import pandas as pd
+</sec>
+<sec id="main-timeline-figure-nb-article">
+  <title>Main Timeline Figure</title>
+  </sec>
+  <sec id="cell-184d6123-nb-article" specific-use="notebook-code">
+  <code language="python">import pandas as pd
 import matplotlib
 import matplotlib.pyplot as plt
 %matplotlib inline
 import seaborn as sns
 import numpy as np
 sns.set_theme(style=&quot;whitegrid&quot;)</code>
-    </sec>
-    <sec id="cell-76706a81-nb-article" specific-use="notebook-code">
-    <code language="python">def make_category_columns(df):
+  </sec>
+  <sec id="cell-76706a81-nb-article" specific-use="notebook-code">
+  <code language="python">def make_category_columns(df):
     df['Depth'] = 'Shallow (&lt;18km)'
     df.loc[(df['Depth(km)'] &gt;= 18) &amp; (df['Depth(km)'] &lt;= 28), 'Depth'] = 'Interchange (18km&gt;x&gt;28km)'
     df.loc[df['Depth(km)'] &gt;= 28, 'Depth'] = 'Deep (&gt;28km)'
@@ -707,154 +561,148 @@ sns.set_theme(style=&quot;whitegrid&quot;)</code>
     df.loc[(df['Magnitude'] &gt;= 4) &amp; (df['Magnitude'] &lt;= 5), 'Mag'] = 4    
     
     return df</code>
-    </sec>
-    <sec id="cell-3de56b46-nb-article" specific-use="notebook-content">
   </sec>
-  <sec id="visualising-long-term-earthquake-data-nb-article">
-    <title>Visualising Long term earthquake data</title>
-    <p>Data taken directly from the IGN Catalog</p>
-    <disp-quote>
-      <p>Supported cell outputs below include
-      <monospace>pandas</monospace> dataframe, raw text output,
-      <monospace>matplotlib</monospace> plot, and
-      <monospace>seaborn</monospace> plot.</p>
-    </disp-quote>
-    </sec>
-    <sec id="d4f84df5-nb-article" specific-use="notebook-code">
-    <code language="python">df_ign = pd.read_csv('./data/lapalma_ign.csv')
+  <sec id="cell-3de56b46-nb-article" specific-use="notebook-content">
+</sec>
+<sec id="visualising-long-term-earthquake-data-nb-article">
+  <title>Visualising Long term earthquake data</title>
+  <p>Data taken directly from the IGN Catalog</p>
+  </sec>
+  <sec id="d4f84df5-nb-article" specific-use="notebook-code">
+  <code language="python">df_ign = pd.read_csv('./data/lapalma_ign.csv')
 df_ign = make_category_columns(df_ign)
 df_ign.head()</code>
-    <sec id="d4f84df5-output-0-nb-article" specific-use="notebook-output">
-    <table-wrap>
-      <table border="1">
-        <thead>
-          <tr style="text-align: right;">
-            <th></th>
-            <th>Event</th>
-            <th>Date</th>
-            <th>Time</th>
-            <th>Latitude</th>
-            <th>Longitude</th>
-            <th>Depth(km)</th>
-            <th>Intensity</th>
-            <th>Magnitude</th>
-            <th>Type Mag</th>
-            <th>Location</th>
-            <th>DateTime</th>
-            <th>Timestamp</th>
-            <th>Swarm</th>
-            <th>Phase</th>
-            <th>Depth</th>
-            <th>Mag</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>0</td>
-            <td>es2017eugju</td>
-            <td>2017-03-09</td>
-            <td>23:44:06</td>
-            <td>28.5346</td>
-            <td>-17.8349</td>
-            <td>26.0</td>
-            <td></td>
-            <td>1.6</td>
-            <td>4</td>
-            <td>NE FUENCALIENTE DE LA PALMA.IL</td>
-            <td>2017-03-09 23:44:06</td>
-            <td>1489103046000000000</td>
-            <td>0.0</td>
-            <td>0</td>
-            <td>Interchange (18km&gt;x&gt;28km)</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>es2017euhlh</td>
-            <td>2017-03-10</td>
-            <td>00:16:10</td>
-            <td>28.5491</td>
-            <td>-17.8459</td>
-            <td>27.0</td>
-            <td></td>
-            <td>2.0</td>
-            <td>4</td>
-            <td>N FUENCALIENTE DE LA PALMA.ILP</td>
-            <td>2017-03-10 00:16:10</td>
-            <td>1489104970000000000</td>
-            <td>0.0</td>
-            <td>0</td>
-            <td>Interchange (18km&gt;x&gt;28km)</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>es2017cpaoh</td>
-            <td>2017-03-10</td>
-            <td>00:16:11</td>
-            <td>28.5008</td>
-            <td>-17.8863</td>
-            <td>20.0</td>
-            <td></td>
-            <td>2.1</td>
-            <td>4</td>
-            <td>W LOS CANARIOS.ILP</td>
-            <td>2017-03-10 00:16:11</td>
-            <td>1489104971000000000</td>
-            <td>0.0</td>
-            <td>0</td>
-            <td>Interchange (18km&gt;x&gt;28km)</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>es2017eunnk</td>
-            <td>2017-03-10</td>
-            <td>03:20:26</td>
-            <td>28.5204</td>
-            <td>-17.8657</td>
-            <td>30.0</td>
-            <td></td>
-            <td>1.6</td>
-            <td>4</td>
-            <td>NW FUENCALIENTE DE LA PALMA.IL</td>
-            <td>2017-03-10 03:20:26</td>
-            <td>1489116026000000000</td>
-            <td>0.0</td>
-            <td>0</td>
-            <td>Deep (&gt;28km)</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>es2017kajei</td>
-            <td>2017-08-21</td>
-            <td>02:06:55</td>
-            <td>28.5985</td>
-            <td>-17.7156</td>
-            <td>0.0</td>
-            <td></td>
-            <td>1.6</td>
-            <td>4</td>
-            <td>E EL PUEBLO.ILP</td>
-            <td>2017-08-21 02:06:55</td>
-            <td>1503281215000000000</td>
-            <td>0.0</td>
-            <td>0</td>
-            <td>Shallow (&lt;18km)</td>
-            <td>1</td>
-          </tr>
-        </tbody>
-      </table>
-    </table-wrap>
-    </sec>
-    </sec>
-    <sec id="cell-41ccbc48-nb-article" specific-use="notebook-code">
-    <code language="python">df_ign['DateTime'] = pd.to_datetime(df_ign['Date'] + ' ' + df_ign['Time'])
+  <sec id="d4f84df5-output-0-nb-article" specific-use="notebook-output">
+  <table-wrap>
+    <table border="1">
+      <thead>
+        <tr style="text-align: right;">
+          <th></th>
+          <th>Event</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Latitude</th>
+          <th>Longitude</th>
+          <th>Depth(km)</th>
+          <th>Intensity</th>
+          <th>Magnitude</th>
+          <th>Type Mag</th>
+          <th>Location</th>
+          <th>DateTime</th>
+          <th>Timestamp</th>
+          <th>Swarm</th>
+          <th>Phase</th>
+          <th>Depth</th>
+          <th>Mag</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0</td>
+          <td>es2017eugju</td>
+          <td>2017-03-09</td>
+          <td>23:44:06</td>
+          <td>28.5346</td>
+          <td>-17.8349</td>
+          <td>26.0</td>
+          <td></td>
+          <td>1.6</td>
+          <td>4</td>
+          <td>NE FUENCALIENTE DE LA PALMA.IL</td>
+          <td>2017-03-09 23:44:06</td>
+          <td>1489103046000000000</td>
+          <td>0.0</td>
+          <td>0</td>
+          <td>Interchange (18km&gt;x&gt;28km)</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>es2017euhlh</td>
+          <td>2017-03-10</td>
+          <td>00:16:10</td>
+          <td>28.5491</td>
+          <td>-17.8459</td>
+          <td>27.0</td>
+          <td></td>
+          <td>2.0</td>
+          <td>4</td>
+          <td>N FUENCALIENTE DE LA PALMA.ILP</td>
+          <td>2017-03-10 00:16:10</td>
+          <td>1489104970000000000</td>
+          <td>0.0</td>
+          <td>0</td>
+          <td>Interchange (18km&gt;x&gt;28km)</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>es2017cpaoh</td>
+          <td>2017-03-10</td>
+          <td>00:16:11</td>
+          <td>28.5008</td>
+          <td>-17.8863</td>
+          <td>20.0</td>
+          <td></td>
+          <td>2.1</td>
+          <td>4</td>
+          <td>W LOS CANARIOS.ILP</td>
+          <td>2017-03-10 00:16:11</td>
+          <td>1489104971000000000</td>
+          <td>0.0</td>
+          <td>0</td>
+          <td>Interchange (18km&gt;x&gt;28km)</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>es2017eunnk</td>
+          <td>2017-03-10</td>
+          <td>03:20:26</td>
+          <td>28.5204</td>
+          <td>-17.8657</td>
+          <td>30.0</td>
+          <td></td>
+          <td>1.6</td>
+          <td>4</td>
+          <td>NW FUENCALIENTE DE LA PALMA.IL</td>
+          <td>2017-03-10 03:20:26</td>
+          <td>1489116026000000000</td>
+          <td>0.0</td>
+          <td>0</td>
+          <td>Deep (&gt;28km)</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>es2017kajei</td>
+          <td>2017-08-21</td>
+          <td>02:06:55</td>
+          <td>28.5985</td>
+          <td>-17.7156</td>
+          <td>0.0</td>
+          <td></td>
+          <td>1.6</td>
+          <td>4</td>
+          <td>E EL PUEBLO.ILP</td>
+          <td>2017-08-21 02:06:55</td>
+          <td>1503281215000000000</td>
+          <td>0.0</td>
+          <td>0</td>
+          <td>Shallow (&lt;18km)</td>
+          <td>1</td>
+        </tr>
+      </tbody>
+    </table>
+  </table-wrap>
+  </sec>
+  </sec>
+  <sec id="cell-41ccbc48-nb-article" specific-use="notebook-code">
+  <code language="python">df_ign['DateTime'] = pd.to_datetime(df_ign['Date'] + ' ' + df_ign['Time'])
 df_ign['DateTime'];</code>
-    </sec>
-    <sec id="a3816f99-nb-article" specific-use="notebook-code">
-    <code language="python">df_ign_early = df_ign[df_ign['DateTime'] &lt; '2021-09-11']
+  </sec>
+  <sec id="a3816f99-nb-article" specific-use="notebook-code">
+  <code language="python">df_ign_early = df_ign[df_ign['DateTime'] &lt; '2021-09-11']
 df_ign_pre = df_ign[(df_ign['DateTime'] &gt;= '2021-09-11')&amp;(df_ign['DateTime'] &lt; '2021-09-19 14:13:00')]
 df_ign_phase1 = df_ign[(df_ign['DateTime'] &gt;= '2021-09-19 14:13:00')&amp;(df_ign['DateTime'] &lt; '2021-10-01')]
 df_ign_phase2 = df_ign[(df_ign['DateTime'] &gt;= '2021-10-01')&amp;(df_ign['DateTime'] &lt; '2021-12-01')]
@@ -867,10 +715,10 @@ df_erupt_2 = df_erupt[(df_erupt['Magnitude'] &gt;= 1.0)&amp;(df_erupt['Magnitude
 df_erupt_3 = df_erupt[(df_erupt['Magnitude'] &gt;= 2.0)&amp;(df_erupt['Magnitude'] &lt; 3.0)]
 df_erupt_4 = df_erupt[(df_erupt['Magnitude'] &gt;= 3.0)&amp;(df_erupt['Magnitude'] &lt; 4.0)]
 df_erupt_5 = df_erupt[df_erupt['Magnitude'] &gt; 4.0]
-    </code>
-    </sec>
-    <sec id="cell-9bd70552-nb-article" specific-use="notebook-code">
-    <code language="python">tab20_colors = (
+  </code>
+  </sec>
+  <sec id="cell-9bd70552-nb-article" specific-use="notebook-code">
+  <code language="python">tab20_colors = (
     (0.12156862745098039, 0.4666666666666667,  0.7058823529411765  ),  # 1f77b4
     (0.6823529411764706,  0.7803921568627451,  0.9098039215686274  ),  # aec7e8
     (1.0,                 0.4980392156862745,  0.054901960784313725),  # ff7f0e
@@ -892,9 +740,9 @@ df_erupt_5 = df_erupt[df_erupt['Magnitude'] &gt; 4.0]
     (0.09019607843137255, 0.7450980392156863,  0.8117647058823529  ),  # 17becf
     (0.6196078431372549,  0.8549019607843137,  0.8980392156862745),    # 9edae5
 )</code>
-    </sec>
-    <sec id="cell-fig-timeline-nb-article" specific-use="notebook-code">
-    <code language="python">from matplotlib.patches import Rectangle
+  </sec>
+  <sec id="cell-fig-timeline-nb-article" specific-use="notebook-code">
+  <code language="python">from matplotlib.patches import Rectangle
 
 import datetime as dt
 from matplotlib.dates import date2num, num2date
@@ -974,23 +822,23 @@ ax_timeline.add_patch(Rectangle((date2num(pd.to_datetime('2021-12-01')), -8), da
 ax_timeline.set_title(&quot;Recorded seismicity during the La Palma eruption 11 September - 15 December 2021 (INVOLCAN Dataset)&quot;, dict(fontsize=24), pad=20)
 ax_timeline.set_ylabel(&quot;Depth (km)&quot;, dict(fontsize=20), labelpad=20)
 ax_timeline.set_xlabel(&quot;Eruption Timeline&quot;, dict(fontsize=20), labelpad=20);
-    </code>
-    <sec id="cell-fig-timeline-output-0-nb-article" specific-use="notebook-output">
-    <fig id="fig-timeline-nb-article">
-      <caption><p>Figure 3: Earthquake data over time (n=5465) to
-      understand their distributions spatially, by depth, by magnitude
-      and in time.</p></caption>
-      <graphic mimetype="image" mime-subtype="png" xlink:href="article_files/figure-jats/fig-timeline-output-1.png" />
-    </fig>
-    </sec>
-    </sec>
-    <sec id="cell-6014701a-nb-article" specific-use="notebook-content">
+  </code>
+  <sec id="cell-fig-timeline-output-0-nb-article" specific-use="notebook-output">
+  <fig id="fig-timeline-nb-article">
+    <caption><p>Figure 3: Earthquake data over time (n=5465) to
+    understand their distributions spatially, by depth, by magnitude and
+    in time.</p></caption>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="article_files/figure-jats/fig-timeline-output-1.png" />
+  </fig>
   </sec>
-  <sec id="cumulative-distribution-plots-nb-article">
-    <title>Cumulative Distribution Plots</title>
-    </sec>
-    <sec id="d0ea08d9-nb-article" specific-use="notebook-code">
-    <code language="python">def cumulative_events_mag_depth(df, hue='Depth', kind='scatter', ax=None, dpi=100, palette=None, kde=True):
+  </sec>
+  <sec id="cell-6014701a-nb-article" specific-use="notebook-content">
+</sec>
+<sec id="cumulative-distribution-plots-nb-article">
+  <title>Cumulative Distribution Plots</title>
+  </sec>
+  <sec id="d0ea08d9-nb-article" specific-use="notebook-code">
+  <code language="python">def cumulative_events_mag_depth(df, hue='Depth', kind='scatter', ax=None, dpi=100, palette=None, kde=True):
     matplotlib.rcParams['ytick.labelright'] = False
     g = sns.jointplot(x=&quot;Magnitude&quot;, y=&quot;Depth(km)&quot;, data=df,
                       kind=kind, hue=hue, height=10, space=0.1, marginal_ticks=False, ratio=8, alpha=0.6,
@@ -1000,25 +848,24 @@ ax_timeline.set_xlabel(&quot;Eruption Timeline&quot;, dict(fontsize=20), labelpa
         g.plot_joint(sns.kdeplot, color=&quot;b&quot;, zorder=1, levels=15, ax=ax)
     g.fig.axes[0].invert_yaxis();
     g.fig.set_dpi(dpi)</code>
-    </sec>
-    <sec id="cell-fig-cumulative-nb-article" specific-use="notebook-code">
-    <code language="python">import warnings
+  </sec>
+  <sec id="cell-fig-cumulative-nb-article" specific-use="notebook-code">
+  <code language="python">import warnings
 
 with warnings.catch_warnings():
     warnings.simplefilter(&quot;ignore&quot;)
     cumulative_events_mag_depth(df_ign, hue=None, dpi=200)
     plt.suptitle('Cumulative Events 01-01-2017 to 01-01-2022', y=1.01);</code>
-    <sec id="cell-fig-cumulative-output-0-nb-article" specific-use="notebook-output">
-    <fig id="fig-cumulative-nb-article">
-      <caption><p>Figure 4: Cumulative earthquake data over time
-      (n=5465) to understand their distributions spatially, by depth and
-      magnitude.</p></caption>
-      <graphic mimetype="image" mime-subtype="png" xlink:href="article_files/figure-jats/fig-cumulative-output-1.png" />
-    </fig>
-    </sec>
-    </sec>
-    <sec id="a8eb85c8-nb-article" specific-use="notebook-content">
+  <sec id="cell-fig-cumulative-output-0-nb-article" specific-use="notebook-output">
+  <fig id="fig-cumulative-nb-article">
+    <caption><p>Figure 4: Cumulative earthquake data over time (n=5465)
+    to understand their distributions spatially, by depth and
+    magnitude.</p></caption>
+    <graphic mimetype="image" mime-subtype="png" xlink:href="article_files/figure-jats/fig-cumulative-output-1.png" />
+  </fig>
   </sec>
+  </sec>
+  <sec id="a8eb85c8-nb-article" specific-use="notebook-content">
 </sec>
 <sec id="results-nb-article">
   <title>Results</title>
@@ -1050,15 +897,9 @@ with warnings.catch_warnings():
   (<xref alt="2019" rid="ref-marrero2019-nb-article" ref-type="bibr">2019</xref>).</p>
   </sec>
   <sec id="e445a1b1-nb-article" specific-use="notebook-content">
-  <disp-quote>
-    <p>Data availability statement should be specified in a separate
-    cell with metadata
-    <monospace>&quot;part&quot;: &quot;availability&quot;</monospace>,
-    similar to the abstract.</p>
-    <p>AGU requires an Availability Statement for the underlying data
-    needed to understand, evaluate, and build upon the reported research
-    at the time of peer review and publication.</p>
-  </disp-quote>
+</sec>
+<sec id="availability-nb-article">
+  <title>Availability</title>
   <p>A web scraping script was developed to pull data into a
   machine-readable form for analysis. That code tool
   <ext-link ext-link-type="uri" xlink:href="https://github.com/stevejpurves/ign-earthquake-data">is
@@ -1066,21 +907,21 @@ with warnings.catch_warnings():
   data.</p>
   </sec>
   <sec id="cell-411eb897-43aa-4fe6-b9df-ed24ef2581c3-nb-article" specific-use="notebook-content">
-  <sec id="references-nb-article">
-    <title>References</title>
-    </sec>
-    <ref-list>
-      <ref id="ref-marrero2019-nb-article">
-        <mixed-citation>Marrero, José, Alicia García, Manuel Berrocoso,
-        Ángeles Llinares, Antonio Rodríguez-Losada, and R. Ortiz. 2019.
-        “Strategies for the Development of Volcanic Hazard Maps in
-        Monogenetic Volcanic Fields: The Example of La Palma (Canary
-        Islands).” <italic>Journal of Applied Volcanology</italic> 8
-        (July).
-        <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1186/s13617-019-0085-5">https://doi.org/10.1186/s13617-019-0085-5</ext-link>.</mixed-citation>
-      </ref>
-    </ref-list>
+</sec>
+<sec id="references-nb-article">
+  <title>References</title>
   </sec>
+  <ref-list>
+    <ref id="ref-marrero2019-nb-article">
+      <mixed-citation>Marrero, José, Alicia García, Manuel Berrocoso,
+      Ángeles Llinares, Antonio Rodríguez-Losada, and R. Ortiz. 2019.
+      “Strategies for the Development of Volcanic Hazard Maps in
+      Monogenetic Volcanic Fields: The Example of La Palma (Canary
+      Islands).” <italic>Journal of Applied Volcanology</italic> 8
+      (July).
+      <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1186/s13617-019-0085-5">https://doi.org/10.1186/s13617-019-0085-5</ext-link>.</mixed-citation>
+    </ref>
+  </ref-list>
 </sec>
 </body>
 

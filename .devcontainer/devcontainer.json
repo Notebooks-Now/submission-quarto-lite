@@ -12,7 +12,6 @@
     },
     "ghcr.io/devcontainers/features/conda:1": {}
   },
-  "postCreateCommand": "conda env update --prefix ./env --file environment.yml  --prune",
   "postAttachCommand": "python3 -m pip install jupyterlab-quarto\nsudo python3 -m juptyer lab",
   "forwardPorts": [
     8888

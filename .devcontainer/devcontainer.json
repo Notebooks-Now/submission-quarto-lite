@@ -12,7 +12,7 @@
     },
     "ghcr.io/devcontainers/features/conda:1": {}
   },
-  "postAttachCommand": "python3 -m pip install jupyterlab-quarto\nsudo python3 -m juptyer lab",
+  "postAttachCommand": "python3 -m pip install jupyterlab-quarto\nsudo python3 -m jupyter lab",
   "forwardPorts": [
     8888
   ],

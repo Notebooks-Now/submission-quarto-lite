@@ -1,0 +1,31 @@
+{
+  "name": "Default Container",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {
+      "installJupyterlab": true
+    },
+    "ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {
+      "version": "prerelease",
+      "installTinyTex": true,
+      "installChromium": false
+    },
+    "ghcr.io/devcontainers/features/conda:1": {}
+  },
+  "postCreateCommand": "conda env update --prefix ./env --file environment.yml  --prune",
+  "forwardPorts": [
+    8888
+  ],
+  "portsAttributes": {
+    "8888": {
+      "label": "Jupyter",
+      "requireLocalPort": true,
+      "onAutoForward": "ignore"
+    }
+  },
+  "codespaces": {
+    "openFiles": [
+      "article.ipynb"
+    ]
+  }
+}

@@ -3,7 +3,8 @@
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "features": {
     "ghcr.io/devcontainers/features/python:1": {
-      "installJupyterlab": true
+      "installJupyterlab": true,
+      "configureJupyterlabAllowOrigin": "*"
     },
     "ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {
       "version": "prerelease",
@@ -12,7 +13,7 @@
     },
     "ghcr.io/devcontainers/features/conda:1": {}
   },
-  "postAttachCommand": "python3 -m pip install jupyterlab-quarto\nsudo python3 -m jupyterlab",
+  "postStartCommand": "python3 -m pip install jupyterlab-quarto & python3 -m jupyterlab &",
   "forwardPorts": [
     8888
   ],

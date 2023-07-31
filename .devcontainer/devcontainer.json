@@ -13,7 +13,7 @@
     },
     "ghcr.io/devcontainers/features/conda:1": {}
   },
-  "postStartCommand": "python3 -m pip install jupyterlab-quarto & python3 -m jupyterlab &",
+  "onCreate": "python3 -m pip install jupyterlab-quarto & python3 -m jupyterlab",
   "forwardPorts": [
     8888
   ],

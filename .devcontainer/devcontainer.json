@@ -9,12 +9,9 @@
       "version": "prerelease",
       "installTinyTex": true,
       "installChromium": false
-    },
-    "ghcr.io/devcontainers/features/conda:1": {
-      "addCondaForge": true
     }
   },
-  "postCreateCommand": "conda env create -f environment.yml",
+  "postCreateCommand": "python3 -m pip3 install -r requirements.txt",
   "customizations": {
     "vscode": {
       "extensions": [

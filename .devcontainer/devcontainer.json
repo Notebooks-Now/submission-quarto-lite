@@ -16,6 +16,18 @@
   },
   "postCreateCommand": "conda env create -f environment.yml",
   "customizations": {
+    "vscode": {
+      "extensions": [
+        "sumneko.lua",
+        "ms-toolsai.jupyter",
+        "ms-python.vscode-pylance",
+        "ms-python.python",
+        "ms-toolsai.vscode-jupyter-cell-tags",
+        "ms-toolsai.jupyter-keymap",
+        "ms-toolsai.jupyter-renderers",
+        "ms-toolsai.vscode-jupyter-slideshow"
+      ]
+    },
     "codespaces": {
       "openFiles": [
         "article.ipynb"

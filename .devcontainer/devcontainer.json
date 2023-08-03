@@ -3,30 +3,23 @@
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "features": {
     "ghcr.io/devcontainers/features/python:1": {
-      "installJupyterlab": true,
-      "configureJupyterlabAllowOrigin": "*"
+      "installJupyterlab": false
     },
     "ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {
       "version": "prerelease",
       "installTinyTex": true,
       "installChromium": false
     },
-    "ghcr.io/devcontainers/features/conda:1": {}
-  },
-  "postAttachCommand": "python3 -m pip install jupyterlab-quarto && python3 -m jupyterlab",
-  "forwardPorts": [
-    8888
-  ],
-  "portsAttributes": {
-    "8888": {
-      "label": "Jupyter",
-      "requireLocalPort": true,
-      "onAutoForward": "ignore"
+    "ghcr.io/devcontainers/features/conda:1": {
+      "addCondaForge": true
     }
   },
-  "codespaces": {
-    "openFiles": [
-      "article.ipynb"
-    ]
+  "postCreateCommand": "conda env create -f environment.yml",
+  "customizations": {
+    "codespaces": {
+      "openFiles": [
+        "article.ipynb"
+      ]
+    }
   }
 }

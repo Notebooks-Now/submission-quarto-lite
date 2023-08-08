@@ -1,3 +1,5 @@
+#!/bin/sh -v
+
 RELEASE_JSON=$(curl https://quarto.org/docs/download/_prerelease.json)
 VERSION=$( jq -r  '.version' <<< "${RELEASE_JSON}" ) 
 

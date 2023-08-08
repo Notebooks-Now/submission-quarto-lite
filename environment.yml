@@ -1,0 +1,15 @@
+name: lapalma-earthquakes
+channels:
+  - conda-forge
+  - default
+dependencies:
+  - jupyterlab>=4.0
+  - numpy
+  - matplotlib
+  - pandas
+  - scipy
+  - seaborn
+  - altair
+  - plotly
+  - pip:
+    - jupyterlab-quarto

@@ -18,3 +18,11 @@ echo
 echo Installed Quarto $VERSION...
 echo
 
+echo Installing TinyTex...
+echo
+
+quarto install tinytex --no-prompt
+
+echo
+echo Installed TinyTex...
+echo

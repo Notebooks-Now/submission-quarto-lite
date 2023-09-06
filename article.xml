@@ -915,33 +915,33 @@ with warnings.catch_warnings():
 <sec id="references-nb-article">
   <title>References</title>
   </sec>
-  <ref-list>
-    <ref id="ref-marrero2019-nb-article">
-      <element-citation publication-type="article-journal">
-        <person-group person-group-type="author">
-          <name><surname>Marrero</surname><given-names>José</given-names></name>
-          <name><surname>García</surname><given-names>Alicia</given-names></name>
-          <name><surname>Berrocoso</surname><given-names>Manuel</given-names></name>
-          <name><surname>Llinares</surname><given-names>Ángeles</given-names></name>
-          <name><surname>Rodríguez-Losada</surname><given-names>Antonio</given-names></name>
-          <name><surname>Ortiz</surname><given-names>R.</given-names></name>
-        </person-group>
-        <article-title>Strategies for the development of volcanic hazard maps in monogenetic volcanic fields: The example of La Palma (Canary Islands)</article-title>
-        <source>Journal of Applied Volcanology</source>
-        <year iso-8601-date="2019-07">2019</year><month>07</month>
-        <volume>8</volume>
-        <pub-id pub-id-type="doi">10.1186/s13617-019-0085-5</pub-id>
-        <fpage></fpage>
-        <lpage></lpage>
-      </element-citation>
-    </ref>
-  </ref-list>
 </sec>
 </body>
 
 
 
 <back>
+<ref-list>
+  <ref id="ref-marrero2019-nb-article">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Marrero</surname><given-names>José</given-names></name>
+        <name><surname>García</surname><given-names>Alicia</given-names></name>
+        <name><surname>Berrocoso</surname><given-names>Manuel</given-names></name>
+        <name><surname>Llinares</surname><given-names>Ángeles</given-names></name>
+        <name><surname>Rodríguez-Losada</surname><given-names>Antonio</given-names></name>
+        <name><surname>Ortiz</surname><given-names>R.</given-names></name>
+      </person-group>
+      <article-title>Strategies for the development of volcanic hazard maps in monogenetic volcanic fields: The example of La Palma (Canary Islands)</article-title>
+      <source>Journal of Applied Volcanology</source>
+      <year iso-8601-date="2019-07">2019</year><month>07</month>
+      <volume>8</volume>
+      <pub-id pub-id-type="doi">10.1186/s13617-019-0085-5</pub-id>
+      <fpage></fpage>
+      <lpage></lpage>
+    </element-citation>
+  </ref>
+</ref-list>
 </back>
 
 

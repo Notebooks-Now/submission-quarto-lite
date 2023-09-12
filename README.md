@@ -2,7 +2,7 @@
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Notebooks-Now/submission-quarto-lite/HEAD?labpath=article.ipynb)
 
-This submission template is for a simple notebook-based publication with one source file, supporting data, bibliography, and Quarto build configuration.
+This submission template is for a simple notebook-based publication with one source file, supporting data, bibliography, and Quarto build configuration. It is based upon a new type of project in Quarto, Manuscripts. Learn more about manuscripts here: <https://quarto.org/docs/manuscripts/>.
 
 ## Source file
 

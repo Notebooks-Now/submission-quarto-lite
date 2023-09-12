@@ -26,7 +26,7 @@ Bibliography entries may be specific in the document as described in the [Quarto
 
 ## Quarto configuration
 
-Configuration for the example is provided by a YAML block that appears as the first cell of the Notebook. 
+Configuration for the example is provided by the Quarto project file, `_quarto.yml`, and the YAML block (front matter) that appears with the article markdown document.
 
 ## Building output artfiacts
 

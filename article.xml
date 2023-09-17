@@ -140,53 +140,54 @@ system feeding the currently very active volcano.</p>
     <p>A number of eruptions were recorded since the colonization of the
     islands by Europeans in the late 1400s, these are summarised in
     <xref alt="Table 1" rid="tbl-history">Table 1</xref>.</p>
-    <table-wrap>
-      <caption>
-        <p>Table 1: Recent historic eruptions on La Palma</p>
-      </caption>
-      <table id="tbl-history">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Year</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Current</td>
-            <td>2021</td>
-          </tr>
-          <tr>
-            <td>Teneguía</td>
-            <td>1971</td>
-          </tr>
-          <tr>
-            <td>Nambroque</td>
-            <td>1949</td>
-          </tr>
-          <tr>
-            <td>El Charco</td>
-            <td>1712</td>
-          </tr>
-          <tr>
-            <td>Volcán San Antonio</td>
-            <td>1677</td>
-          </tr>
-          <tr>
-            <td>Volcán San Martin</td>
-            <td>1646</td>
-          </tr>
-          <tr>
-            <td>Tajuya near El Paso</td>
-            <td>1585</td>
-          </tr>
-          <tr>
-            <td>Montaña Quemada</td>
-            <td>1492</td>
-          </tr>
-        </tbody>
-      </table>
-    </table-wrap>
+    <fig id="tbl-history">
+      <caption><p>Table 1: Recent historic eruptions on La
+      Palma</p></caption>
+      <table-wrap>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Current</td>
+              <td>2021</td>
+            </tr>
+            <tr>
+              <td>Teneguía</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Nambroque</td>
+              <td>1949</td>
+            </tr>
+            <tr>
+              <td>El Charco</td>
+              <td>1712</td>
+            </tr>
+            <tr>
+              <td>Volcán San Antonio</td>
+              <td>1677</td>
+            </tr>
+            <tr>
+              <td>Volcán San Martin</td>
+              <td>1646</td>
+            </tr>
+            <tr>
+              <td>Tajuya near El Paso</td>
+              <td>1585</td>
+            </tr>
+            <tr>
+              <td>Montaña Quemada</td>
+              <td>1492</td>
+            </tr>
+          </tbody>
+        </table>
+      </table-wrap>
+    </fig>
     <p>This equates to an eruption on average every 79 years up until
     the 1971 event. The probability of a future eruption can be modeled
     by a Poisson distribution
@@ -423,53 +424,54 @@ system feeding the currently very active volcano.</p>
     <p>A number of eruptions were recorded since the colonization of the
     islands by Europeans in the late 1400s, these are summarised in
     <xref alt="Table 1" rid="tbl-history-nb-article">Table 1</xref>.</p>
-    <table-wrap>
-      <caption>
-        <p>Table 1: Recent historic eruptions on La Palma</p>
-      </caption>
-      <table id="tbl-history-nb-article">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Year</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Current</td>
-            <td>2021</td>
-          </tr>
-          <tr>
-            <td>Teneguía</td>
-            <td>1971</td>
-          </tr>
-          <tr>
-            <td>Nambroque</td>
-            <td>1949</td>
-          </tr>
-          <tr>
-            <td>El Charco</td>
-            <td>1712</td>
-          </tr>
-          <tr>
-            <td>Volcán San Antonio</td>
-            <td>1677</td>
-          </tr>
-          <tr>
-            <td>Volcán San Martin</td>
-            <td>1646</td>
-          </tr>
-          <tr>
-            <td>Tajuya near El Paso</td>
-            <td>1585</td>
-          </tr>
-          <tr>
-            <td>Montaña Quemada</td>
-            <td>1492</td>
-          </tr>
-        </tbody>
-      </table>
-    </table-wrap>
+    <fig id="tbl-history-nb-article">
+      <caption><p>Table 1: Recent historic eruptions on La
+      Palma</p></caption>
+      <table-wrap>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Current</td>
+              <td>2021</td>
+            </tr>
+            <tr>
+              <td>Teneguía</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Nambroque</td>
+              <td>1949</td>
+            </tr>
+            <tr>
+              <td>El Charco</td>
+              <td>1712</td>
+            </tr>
+            <tr>
+              <td>Volcán San Antonio</td>
+              <td>1677</td>
+            </tr>
+            <tr>
+              <td>Volcán San Martin</td>
+              <td>1646</td>
+            </tr>
+            <tr>
+              <td>Tajuya near El Paso</td>
+              <td>1585</td>
+            </tr>
+            <tr>
+              <td>Montaña Quemada</td>
+              <td>1492</td>
+            </tr>
+          </tbody>
+        </table>
+      </table-wrap>
+    </fig>
     <p>This equates to an eruption on average every 79 years up until
     the 1971 event. The probability of a future eruption can be modeled
     by a Poisson distribution

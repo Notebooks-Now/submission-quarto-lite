@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
     <meta charset="utf-8">
-    <meta name="generator" content="quarto-1.4.358">
+    <meta name="generator" content="quarto-1.4.369">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -61,6 +61,7 @@
       div.csl-bib-body { }
       div.csl-entry {
         clear: both;
+        margin-bottom: 0em;
       }
       .hanging-indent div.csl-entry {
         margin-left:2em;
@@ -179,6 +180,9 @@
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
      <script async="" src="https://hypothes.is/embed.js"></script>
 <script>
   window.document.addEventListener("DOMContentLoaded", function (_event) {
@@ -306,10 +310,14 @@
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>La Palma is one of the west most islands in the Volcanic Archipelago of the Canary Islands, a Spanish territory situated is the Atlantic Ocean where at their closest point are 100km from the African coast <a href="#fig-map" class="quarto-xref">Figure&nbsp;1</a>. The island is one of the youngest, remains active and is still in the island forming stage.</p>
-<div id="fig-map" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="images/la-palma-map.png" class="img-fluid figure-img" style="width:100.0%" data-align="center"></p>
-<figcaption class="figure-caption">Figure&nbsp;1: Map of La Palma in the Canary Islands. Image credit <a href="https://commons.wikimedia.org/w/index.php?curid=76638603">NordNordWest</a></figcaption>
+<div id="fig-map" class="quarto-figure quarto-figure-center anchored" data-align="center" width="100%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/la-palma-map.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-description="Figure&nbsp;1: Map of La Palma in the Canary Islands. Image credit NordNordWest"><img src="images/la-palma-map.png" class="img-fluid figure-img" style="width:100.0%" data-align="center"></a>
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig" id="fig-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Map of La Palma in the Canary Islands. Image credit <a href="https://commons.wikimedia.org/w/index.php?curid=76638603">NordNordWest</a>
+</figcaption>
 </figure>
 </div>
 <p>La Palma has been constructed by various phases of volcanism, the most recent and currently active being the <em>Cumbre Vieja</em> volcano, a north-south volcanic ridge that constitutes the southern half of the island.</p>
@@ -317,8 +325,12 @@
 <h3 class="anchored" data-anchor-id="eruption-history">Eruption History</h3>
 <p>A number of eruptions were recorded since the colonization of the islands by Europeans in the late 1400s, these are summarised in <a href="#tbl-history" class="quarto-xref">Table&nbsp;1</a>.</p>
 <div id="tbl-history" class="anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="table quarto-float-caption quarto-float-tbl" id="tbl-history-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Recent historic eruptions on La Palma
+</figcaption>
+<div aria-describedby="tbl-history-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table table-sm table-striped small">
-<caption>Table&nbsp;1: Recent historic eruptions on La Palma</caption>
 <thead>
 <tr class="header">
 <th>Name</th>
@@ -361,6 +373,8 @@
 </tbody>
 </table>
 </div>
+</figure>
+</div>
 <p>This equates to an eruption on average every 79 years up until the 1971 event. The probability of a future eruption can be modeled by a Poisson distribution <a href="#eq-poisson" class="quarto-xref">Equation&nbsp;1</a>.</p>
 <p><span id="eq-poisson"><span class="math display">\[
 p(x)=\frac{e^{-\lambda} \lambda^{x}}{x !}
@@ -374,10 +388,14 @@ p_e = 1-\mathrm{e}^{-t \lambda}
 <section id="magma-reservoirs" class="level3">
 <h3 class="anchored" data-anchor-id="magma-reservoirs">Magma Reservoirs</h3>
 <p>Studies of the magma systems feeding the volcano, such as <span class="citation" data-cites="marrero2019">Marrero et al. (<a href="#ref-marrero2019" role="doc-biblioref">2019</a>)</span> has proposed that there are two main magma reservoirs feeding the Cumbre Vieja volcano; one in the mantle (30-40km depth) which charges and in turn feeds a shallower crustal reservoir (10-20km depth).</p>
-<div id="fig-reservoirs" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="images/reservoirs.png" class="img-fluid figure-img" style="width:100.0%" data-align="center"></p>
-<figcaption class="figure-caption">Figure&nbsp;2: Proposed model from Marrero et al</figcaption>
+<div id="fig-reservoirs" class="quarto-figure quarto-figure-center anchored" data-align="center" width="100%">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-reservoirs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/reservoirs.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" data-description="Figure&nbsp;2: Proposed model from Marrero et al"><img src="images/reservoirs.png" class="img-fluid figure-img" style="width:100.0%" data-align="center"></a>
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig" id="fig-reservoirs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Proposed model from Marrero et al
+</figcaption>
 </figure>
 </div>
 <p>In this paper, we look at recent seismicity data to see if we can see evidence of such a system action, see <a href="#fig-reservoirs" class="quarto-xref">Figure&nbsp;2</a>.</p>
@@ -682,9 +700,13 @@ p_e = 1-\mathrm{e}^{-t \lambda}
 <span id="cb7-80"><a href="#cb7-80" aria-hidden="true" tabindex="-1"></a>ax_timeline.set_xlabel(<span class="st">"Eruption Timeline"</span>, <span class="bu">dict</span>(fontsize<span class="op">=</span><span class="dv">20</span>), labelpad<span class="op">=</span><span class="dv">20</span>)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="fig-timeline" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p class=""><img src="article_files/figure-html/fig-timeline-output-1.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;3: Earthquake data over time (n=5465) to understand their distributions spatially, by depth, by magnitude and in time.</figcaption>
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-timeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
+<a href="article_files/figure-html/fig-timeline-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" data-description="Figure&nbsp;3: Earthquake data over time (n=5465) to understand their distributions spatially, by depth, by magnitude and in time."><img src="article_files/figure-html/fig-timeline-output-1.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig" id="fig-timeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Earthquake data over time (n=5465) to understand their distributions spatially, by depth, by magnitude and in time.
+</figcaption>
 </figure>
 </div>
 </div>
@@ -715,9 +737,13 @@ p_e = 1-\mathrm{e}^{-t \lambda}
 <span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    plt.suptitle(<span class="st">'Cumulative Events 01-01-2017 to 01-01-2022'</span>, y<span class="op">=</span><span class="fl">1.01</span>)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="fig-cumulative" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p class=""><img src="article_files/figure-html/fig-cumulative-output-1.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;4: Cumulative earthquake data over time (n=5465) to understand their distributions spatially, by depth and magnitude.</figcaption>
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cumulative-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
+<a href="article_files/figure-html/fig-cumulative-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" data-description="Figure&nbsp;4: Cumulative earthquake data over time (n=5465) to understand their distributions spatially, by depth and magnitude."><img src="article_files/figure-html/fig-cumulative-output-1.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig" id="fig-cumulative-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Cumulative earthquake data over time (n=5465) to understand their distributions spatially, by depth and magnitude.
+</figcaption>
 </figure>
 </div>
 </div>
@@ -755,7 +781,7 @@ p_e = 1-\mathrm{e}^{-t \lambda}
 <h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
 </section>
 </div>
-<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-marrero2019" class="csl-entry" role="listitem">
 Marrero, José, Alicia García, Manuel Berrocoso, Ángeles Llinares, Antonio Rodríguez-Losada, and R. Ortiz. 2019. <span>“Strategies for the Development of Volcanic Hazard Maps in Monogenetic Volcanic Fields: The Example of <span>La</span> <span>Palma</span> (<span>Canary</span> <span>Islands</span>).”</span> <em>Journal of Applied Volcanology</em> 8 (July). <a href="https://doi.org/10.1186/s13617-019-0085-5">https://doi.org/10.1186/s13617-019-0085-5</a>.
 </div>
@@ -1104,6 +1130,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>  </div> <!-- /content --> 
+</script>  </div> <!-- /content -->  <script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","openEffect":"zoom","loop":true,"descPosition":"bottom"});</script> 
   
 </body></html>
